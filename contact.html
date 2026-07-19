@@ -8,7 +8,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22><path d=%22M4,28 C8,24 3,20 10,17 C17,14 9,10 16,6 C19,3 22,5 27,2%22 fill=%22none%22 stroke=%22%238b5a2b%22 stroke-width=%222.6%22 stroke-linecap=%22round%22/><ellipse cx=%2211%22 cy=%2215.5%22 rx=%223.4%22 ry=%221.7%22 fill=%22%232fbf71%22 transform=%22rotate(-35 11 15.5)%22/><ellipse cx=%2220.5%22 cy=%226.5%22 rx=%223.2%22 ry=%221.6%22 fill=%22%232fbf71%22 transform=%22rotate(15 20.5 6.5)%22/><ellipse cx=%226%22 cy=%2224%22 rx=%222.8%22 ry=%221.4%22 fill=%22%232fbf71%22 transform=%22rotate(-55 6 24)%22/></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -16,16 +16,17 @@
     <div class="container header-inner">
         <a href="index.html" class="logo"><svg class="brand-icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M4,28 C8,24 3,20 10,17 C17,14 9,10 16,6 C19,3 22,5 27,2" fill="none" stroke="#8b5a2b" stroke-width="2.6" stroke-linecap="round"/><ellipse cx="11" cy="15.5" rx="3.4" ry="1.7" fill="#2fbf71" transform="rotate(-35 11 15.5)"/><ellipse cx="20.5" cy="6.5" rx="3.2" ry="1.6" fill="#2fbf71" transform="rotate(15 20.5 6.5)"/><ellipse cx="6" cy="24" rx="2.8" ry="1.4" fill="#2fbf71" transform="rotate(-55 6 24)"/></svg> <span class="logo-m">Learn</span> <span class="logo-g">it</span> <span class="logo-e">twisted</span></a>
         <nav class="main-nav">
+            <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch language">العربية</button>
             <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
             <ul id="navList">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="academics.html">Academics</a></li>
-                <li><a href="admissions.html">Admissions</a></li>
-                <li><a href="news.html">News</a></li>
-                <li><a href="success.html">Success Stories</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="index.html" data-ar="الرئيسية">Home</a></li>
+                <li><a href="about.html" data-ar="نبذة عنا">About</a></li>
+                <li><a href="academics.html" data-ar="المناهج">Academics</a></li>
+                <li><a href="admissions.html" data-ar="القبول">Admissions</a></li>
+                <li><a href="news.html" data-ar="الأخبار">News</a></li>
+                <li><a href="success.html" data-ar="قصص النجاح">Success Stories</a></li>
+                <li><a href="events.html" data-ar="الفعاليات">Events</a></li>
+                <li><a href="contact.html" class="active" data-ar="تواصل">Contact</a></li>
             </ul>
         </nav>
     </div>
@@ -34,8 +35,8 @@
 <main>
 <section class="page-hero">
     <div class="container">
-        <h1>Contact Us</h1>
-        <p>We'd love to hear from you — whether it's a quick question or a request to tour the school.</p>
+        <h1 data-ar="تواصل معنا">Contact Us</h1>
+        <p data-ar="يسعدنا التواصل معك — سواء كان سؤالًا سريعًا أو طلب جولة تعريفية في المدرسة.">We'd love to hear from you — whether it's a quick question or a request to tour the school.</p>
     </div>
 </section>
 
@@ -43,46 +44,46 @@
     <div class="container">
         <div class="grid grid-2">
             <div>
-                <h2>Send a Message</h2>
-                <p class="form-note" style="margin-bottom:1.2rem;">This form opens your email app addressed to the front office — nothing is sent from this page directly.</p>
+                <h2 data-ar="أرسل رسالة">Send a Message</h2>
+                <p class="form-note" style="margin-bottom:1.2rem;" data-ar="هذه الاستمارة تفتح تطبيق البريد الإلكتروني موجّهًا إلى المكتب الأمامي — لا يُرسل شيء من هذه الصفحة مباشرة.">This form opens your email app addressed to the front office — nothing is sent from this page directly.</p>
                 <form id="contactForm" class="form-grid">
                     <div>
-                        <label for="cf-name">Your name</label>
+                        <label for="cf-name" data-ar="اسمك">Your name</label>
                         <input type="text" id="cf-name" name="name" required>
                     </div>
                     <div>
-                        <label for="cf-email">Email address</label>
+                        <label for="cf-email" data-ar="البريد الإلكتروني">Email address</label>
                         <input type="email" id="cf-email" name="email" required>
                     </div>
                     <div>
-                        <label for="cf-grade">Grade of interest</label>
+                        <label for="cf-grade" data-ar="الصف الذي يهمك">Grade of interest</label>
                         <select id="cf-grade" name="grade">
-                            <option value="Kindergarten">Kindergarten</option>
-                            <option value="Grade 1">Grade 1</option>
-                            <option value="Grade 2">Grade 2</option>
-                            <option value="Grade 3">Grade 3</option>
-                            <option value="Grade 4">Grade 4</option>
-                            <option value="Grade 5">Grade 5</option>
-                            <option value="Not sure yet">Not sure yet</option>
+                            <option value="Kindergarten" data-ar="الروضة">Kindergarten</option>
+                            <option value="Grade 1" data-ar="الصف الأول">Grade 1</option>
+                            <option value="Grade 2" data-ar="الصف الثاني">Grade 2</option>
+                            <option value="Grade 3" data-ar="الصف الثالث">Grade 3</option>
+                            <option value="Grade 4" data-ar="الصف الرابع">Grade 4</option>
+                            <option value="Grade 5" data-ar="الصف الخامس">Grade 5</option>
+                            <option value="Not sure yet" data-ar="لست متأكدًا بعد">Not sure yet</option>
                         </select>
                     </div>
                     <div>
-                        <label for="cf-message">Message</label>
+                        <label for="cf-message" data-ar="الرسالة">Message</label>
                         <textarea id="cf-message" name="message" rows="5" required></textarea>
                     </div>
                     <div>
-                        <button type="submit" class="btn btn-blue">Send Message</button>
+                        <button type="submit" class="btn btn-blue" data-ar="إرسال الرسالة">Send Message</button>
                         <p id="formStatus" class="form-status"></p>
                     </div>
                 </form>
             </div>
             <div>
-                <h2>Contact</h2>
+                <h2 data-ar="تواصل">Contact</h2>
                 <div class="card">
                     <address>
-                        Phone: <a href="tel:+9647819767081">+964 781 9767 081</a><br>
-                        Email: <a href="mailto:simonkazage007@gmail.com">simonkazage007@gmail.com</a><br>
-                        <a href="https://simon-dagenhart.github.io/DagenWeb/" target="_blank" rel="noopener noreferrer">Built by DagenWeb &#8599;</a>
+                        <span data-ar="الهاتف:">Phone:</span> <a href="tel:+9647819767081">+964 781 9767 081</a><br>
+                        <span data-ar="البريد الإلكتروني:">Email:</span> <a href="mailto:simonkazage007@gmail.com">simonkazage007@gmail.com</a><br>
+                        <a href="https://simon-dagenhart.github.io/DagenWeb/" target="_blank" rel="noopener noreferrer" data-ar="بُني بواسطة DagenWeb &#8599;">Built by DagenWeb &#8599;</a>
                     </address>
                 </div>
             </div>
@@ -93,9 +94,9 @@
 <section class="section">
     <div class="container text-center">
         <div class="cta-banner">
-            <h2>Want to see Learn it twisted in person?</h2>
-            <p>Campus tours run every Tuesday and Thursday morning during the school year — no appointment needed, but a heads-up helps us plan.</p>
-            <a href="mailto:simonkazage007@gmail.com?subject=Tour%20Request" class="btn btn-yellow">Request a Tour</a>
+            <h2 data-ar="تريد زيارة Learn it twisted شخصيًا؟">Want to see Learn it twisted in person?</h2>
+            <p data-ar="الجولات التعريفية في الحرم كل ثلاثاء وخميس صباحًا خلال العام الدراسي — لا حاجة لموعد مسبق، لكن إعلامنا مسبقًا يساعدنا على التخطيط.">Campus tours run every Tuesday and Thursday morning during the school year — no appointment needed, but a heads-up helps us plan.</p>
+            <a href="mailto:simonkazage007@gmail.com?subject=Tour%20Request" class="btn btn-yellow" data-ar="اطلب جولة">Request a Tour</a>
         </div>
     </div>
 </section>
@@ -105,36 +106,36 @@
     <div class="container footer-grid">
         <div class="footer-col footer-about">
             <a href="index.html" class="logo"><svg class="brand-icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M4,28 C8,24 3,20 10,17 C17,14 9,10 16,6 C19,3 22,5 27,2" fill="none" stroke="#8b5a2b" stroke-width="2.6" stroke-linecap="round"/><ellipse cx="11" cy="15.5" rx="3.4" ry="1.7" fill="#2fbf71" transform="rotate(-35 11 15.5)"/><ellipse cx="20.5" cy="6.5" rx="3.2" ry="1.6" fill="#2fbf71" transform="rotate(15 20.5 6.5)"/><ellipse cx="6" cy="24" rx="2.8" ry="1.4" fill="#2fbf71" transform="rotate(-55 6 24)"/></svg> Learn it twisted</a>
-            <p>Growing curious minds, kind hearts, and bright futures — together, one school year at a time.</p>
+            <p data-ar="ننمّي عقولًا فضولية، وقلوبًا طيبة، ومستقبلًا مشرقًا — معًا، عامًا دراسيًا تلو الآخر.">Growing curious minds, kind hearts, and bright futures — together, one school year at a time.</p>
         </div>
         <div class="footer-col">
-            <h4>Explore</h4>
+            <h4 data-ar="استكشف">Explore</h4>
             <ul>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="academics.html">Academics</a></li>
-                <li><a href="admissions.html">Admissions</a></li>
-                <li><a href="events.html">Events Calendar</a></li>
+                <li><a href="about.html" data-ar="نبذة عنا">About Us</a></li>
+                <li><a href="academics.html" data-ar="المناهج">Academics</a></li>
+                <li><a href="admissions.html" data-ar="القبول">Admissions</a></li>
+                <li><a href="events.html" data-ar="تقويم الفعاليات">Events Calendar</a></li>
             </ul>
         </div>
         <div class="footer-col">
-            <h4>Community</h4>
+            <h4 data-ar="المجتمع">Community</h4>
             <ul>
-                <li><a href="news.html">School News</a></li>
-                <li><a href="success.html">Success Stories</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="news.html" data-ar="أخبار المدرسة">School News</a></li>
+                <li><a href="success.html" data-ar="قصص النجاح">Success Stories</a></li>
+                <li><a href="contact.html" data-ar="تواصل معنا">Contact Us</a></li>
             </ul>
         </div>
         <div class="footer-col">
-            <h4>Visit Us</h4>
+            <h4 data-ar="تواصل">Visit Us</h4>
             <address>
                 <a href="tel:+9647819767081">+964 781 9767 081</a><br>
                 <a href="mailto:simonkazage007@gmail.com">simonkazage007@gmail.com</a><br>
-                <a href="https://simon-dagenhart.github.io/DagenWeb/" target="_blank" rel="noopener noreferrer">Built by DagenWeb &#8599;</a>
+                <a href="https://simon-dagenhart.github.io/DagenWeb/" target="_blank" rel="noopener noreferrer" data-ar="بُني بواسطة DagenWeb &#8599;">Built by DagenWeb &#8599;</a>
             </address>
         </div>
     </div>
     <div class="container footer-bottom">
-        <p>&copy; <span id="year"></span> Learn it twisted. All rights reserved. (Demo site — school, names, and data are fictional.)</p>
+        <p>&copy; <span id="year"></span> Learn it twisted. <span data-ar="جميع الحقوق محفوظة. (موقع تجريبي — اسم المدرسة والبيانات وهمية.)">All rights reserved. (Demo site — school, names, and data are fictional.)</span></p>
     </div>
 </footer>
 <script src="assets/js/main.js"></script>

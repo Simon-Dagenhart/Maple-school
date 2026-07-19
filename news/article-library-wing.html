@@ -8,7 +8,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22><path d=%22M4,28 C8,24 3,20 10,17 C17,14 9,10 16,6 C19,3 22,5 27,2%22 fill=%22none%22 stroke=%22%238b5a2b%22 stroke-width=%222.6%22 stroke-linecap=%22round%22/><ellipse cx=%2211%22 cy=%2215.5%22 rx=%223.4%22 ry=%221.7%22 fill=%22%232fbf71%22 transform=%22rotate(-35 11 15.5)%22/><ellipse cx=%2220.5%22 cy=%226.5%22 rx=%223.2%22 ry=%221.6%22 fill=%22%232fbf71%22 transform=%22rotate(15 20.5 6.5)%22/><ellipse cx=%226%22 cy=%2224%22 rx=%222.8%22 ry=%221.4%22 fill=%22%232fbf71%22 transform=%22rotate(-55 6 24)%22/></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
@@ -16,16 +16,17 @@
     <div class="container header-inner">
         <a href="../index.html" class="logo"><svg class="brand-icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M4,28 C8,24 3,20 10,17 C17,14 9,10 16,6 C19,3 22,5 27,2" fill="none" stroke="#8b5a2b" stroke-width="2.6" stroke-linecap="round"/><ellipse cx="11" cy="15.5" rx="3.4" ry="1.7" fill="#2fbf71" transform="rotate(-35 11 15.5)"/><ellipse cx="20.5" cy="6.5" rx="3.2" ry="1.6" fill="#2fbf71" transform="rotate(15 20.5 6.5)"/><ellipse cx="6" cy="24" rx="2.8" ry="1.4" fill="#2fbf71" transform="rotate(-55 6 24)"/></svg> <span class="logo-m">Learn</span> <span class="logo-g">it</span> <span class="logo-e">twisted</span></a>
         <nav class="main-nav">
+            <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch language">العربية</button>
             <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
             <ul id="navList">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../about.html">About</a></li>
-                <li><a href="../academics.html">Academics</a></li>
-                <li><a href="../admissions.html">Admissions</a></li>
-                <li><a href="../news.html" class="active">News</a></li>
-                <li><a href="../success.html">Success Stories</a></li>
-                <li><a href="../events.html">Events</a></li>
-                <li><a href="../contact.html">Contact</a></li>
+                <li><a href="../index.html" data-ar="الرئيسية">Home</a></li>
+                <li><a href="../about.html" data-ar="نبذة عنا">About</a></li>
+                <li><a href="../academics.html" data-ar="المناهج">Academics</a></li>
+                <li><a href="../admissions.html" data-ar="القبول">Admissions</a></li>
+                <li><a href="../news.html" class="active" data-ar="الأخبار">News</a></li>
+                <li><a href="../success.html" data-ar="قصص النجاح">Success Stories</a></li>
+                <li><a href="../events.html" data-ar="الفعاليات">Events</a></li>
+                <li><a href="../contact.html" data-ar="تواصل">Contact</a></li>
             </ul>
         </nav>
     </div>
@@ -34,26 +35,26 @@
 <main>
 <section class="section">
     <div class="container narrow">
-        <a href="../news.html" class="back-link">&larr; Back to News</a>
+        <a href="../news.html" class="back-link" data-ar="العودة إلى الأخبار &rarr;">&larr; Back to News</a>
         <div class="article-header">
-            <span class="tag tag-yellow">Facilities</span>
-            <h1>New Library Wing Opens Its Doors</h1>
-            <p class="article-meta">May 28, 2026 &middot; Written by the Learn it twisted Communications Team</p>
+            <span class="tag tag-yellow" data-ar="المرافق">Facilities</span>
+            <h1 data-ar="جناح المكتبة الجديد يفتح أبوابه">New Library Wing Opens Its Doors</h1>
+            <p class="article-meta" data-ar="28 مايو 2026 &middot; كتبه فريق التواصل في Learn it twisted">May 28, 2026 &middot; Written by the Learn it twisted Communications Team</p>
         </div>
         <div class="article-body">
-            <p>After eighteen months of planning and construction, Learn it twisted officially opened its new library wing this week — and students wasted no time putting it to use.</p>
-            <p>The 2,400-square-foot addition triples the school's previous library footprint and includes a dedicated makerspace corner stocked with building blocks, simple circuits, and a class set of laptops for research projects.</p>
-            <blockquote>"I've never seen kids this excited about a building," said librarian Mrs. Alvarez. "We had a line before the doors even opened."</blockquote>
-            <h2>What's new</h2>
+            <p data-ar="بعد ثمانية عشر شهرًا من التخطيط والبناء، افتتحت Learn it twisted رسميًا جناح مكتبتها الجديد هذا الأسبوع — ولم يضيّع الطلاب وقتًا في استخدامه.">After eighteen months of planning and construction, Learn it twisted officially opened its new library wing this week — and students wasted no time putting it to use.</p>
+            <p data-ar="تضاعف الإضافة البالغة مساحتها 2,400 قدم مربع مساحة المكتبة السابقة ثلاث مرات، وتشمل ركن ابتكار مخصصًا مزودًا بمكعبات بناء، ودارات كهربائية بسيطة، ومجموعة حواسيب محمولة صفية لمشاريع البحث.">The 2,400-square-foot addition triples the school's previous library footprint and includes a dedicated makerspace corner stocked with building blocks, simple circuits, and a class set of laptops for research projects.</p>
+            <blockquote data-ar="&quot;لم أرَ أطفالًا بهذا الحماس تجاه مبنى من قبل،&quot; قالت أمينة المكتبة السيدة ألفاريز. &quot;كان لدينا طابور قبل أن تُفتح الأبواب حتى.&quot;">"I've never seen kids this excited about a building," said librarian Mrs. Alvarez. "We had a line before the doors even opened."</blockquote>
+            <h2 data-ar="ما الجديد">What's new</h2>
             <ul>
-                <li>Over 3,000 new titles across every reading level, chosen with input from student book clubs</li>
-                <li>A cozy reading loft with window seating for independent reading time</li>
-                <li>A makerspace corner for STEM projects and class research</li>
-                <li>Flexible seating for small-group instruction and author visits</li>
+                <li data-ar="أكثر من 3,000 عنوان جديد عبر كل مستويات القراءة، اختيرت بمشاركة نوادي الكتاب الطلابية">Over 3,000 new titles across every reading level, chosen with input from student book clubs</li>
+                <li data-ar="شرفة قراءة مريحة مع مقاعد بجانب النوافذ لوقت القراءة المستقل">A cozy reading loft with window seating for independent reading time</li>
+                <li data-ar="ركن ابتكار لمشاريع العلوم والتقنية والبحث الصفي">A makerspace corner for STEM projects and class research</li>
+                <li data-ar="مقاعد مرنة للتعليم بمجموعات صغيرة وزيارات المؤلفين">Flexible seating for small-group instruction and author visits</li>
             </ul>
-            <p>The project was funded through a combination of district capital funds and a two-year fundraising effort led by the Learn it twisted PTA, including proceeds from the last two Fall Festivals.</p>
-            <p>Principal Porter thanked the community for its support: "This library is a gift from this community to every student who walks through Learn it twisted's doors for the next thirty years."</p>
-            <p>The library is open to students before school starting at 7:30 AM and hosts a family reading night on the first Thursday of every month.</p>
+            <p data-ar="مُوّل المشروع من خلال مزيج من أموال المنطقة التعليمية الرأسمالية، وحملة تبرعات استمرت عامين قادتها رابطة أولياء أمور Learn it twisted، شملت عائدات آخر مهرجاني خريف.">The project was funded through a combination of district capital funds and a two-year fundraising effort led by the Learn it twisted PTA, including proceeds from the last two Fall Festivals.</p>
+            <p data-ar="شكرت المديرة بورتر المجتمع على دعمه: &quot;هذه المكتبة هدية من هذا المجتمع لكل طالب يعبر أبواب Learn it twisted خلال السنوات الثلاثين القادمة.&quot;">Principal Porter thanked the community for its support: "This library is a gift from this community to every student who walks through Learn it twisted's doors for the next thirty years."</p>
+            <p data-ar="المكتبة مفتوحة للطلاب قبل الدوام ابتداءً من الساعة 7:30 صباحًا وتستضيف أمسية قراءة عائلية في أول خميس من كل شهر.">The library is open to students before school starting at 7:30 AM and hosts a family reading night on the first Thursday of every month.</p>
         </div>
     </div>
 </section>
@@ -63,36 +64,36 @@
     <div class="container footer-grid">
         <div class="footer-col footer-about">
             <a href="../index.html" class="logo"><svg class="brand-icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M4,28 C8,24 3,20 10,17 C17,14 9,10 16,6 C19,3 22,5 27,2" fill="none" stroke="#8b5a2b" stroke-width="2.6" stroke-linecap="round"/><ellipse cx="11" cy="15.5" rx="3.4" ry="1.7" fill="#2fbf71" transform="rotate(-35 11 15.5)"/><ellipse cx="20.5" cy="6.5" rx="3.2" ry="1.6" fill="#2fbf71" transform="rotate(15 20.5 6.5)"/><ellipse cx="6" cy="24" rx="2.8" ry="1.4" fill="#2fbf71" transform="rotate(-55 6 24)"/></svg> Learn it twisted</a>
-            <p>Growing curious minds, kind hearts, and bright futures — together, one school year at a time.</p>
+            <p data-ar="ننمّي عقولًا فضولية، وقلوبًا طيبة، ومستقبلًا مشرقًا — معًا، عامًا دراسيًا تلو الآخر.">Growing curious minds, kind hearts, and bright futures — together, one school year at a time.</p>
         </div>
         <div class="footer-col">
-            <h4>Explore</h4>
+            <h4 data-ar="استكشف">Explore</h4>
             <ul>
-                <li><a href="../about.html">About Us</a></li>
-                <li><a href="../academics.html">Academics</a></li>
-                <li><a href="../admissions.html">Admissions</a></li>
-                <li><a href="../events.html">Events Calendar</a></li>
+                <li><a href="../about.html" data-ar="نبذة عنا">About Us</a></li>
+                <li><a href="../academics.html" data-ar="المناهج">Academics</a></li>
+                <li><a href="../admissions.html" data-ar="القبول">Admissions</a></li>
+                <li><a href="../events.html" data-ar="تقويم الفعاليات">Events Calendar</a></li>
             </ul>
         </div>
         <div class="footer-col">
-            <h4>Community</h4>
+            <h4 data-ar="المجتمع">Community</h4>
             <ul>
-                <li><a href="../news.html">School News</a></li>
-                <li><a href="../success.html">Success Stories</a></li>
-                <li><a href="../contact.html">Contact Us</a></li>
+                <li><a href="../news.html" data-ar="أخبار المدرسة">School News</a></li>
+                <li><a href="../success.html" data-ar="قصص النجاح">Success Stories</a></li>
+                <li><a href="../contact.html" data-ar="تواصل معنا">Contact Us</a></li>
             </ul>
         </div>
         <div class="footer-col">
-            <h4>Visit Us</h4>
+            <h4 data-ar="تواصل">Visit Us</h4>
             <address>
                 <a href="tel:+9647819767081">+964 781 9767 081</a><br>
                 <a href="mailto:simonkazage007@gmail.com">simonkazage007@gmail.com</a><br>
-                <a href="https://simon-dagenhart.github.io/DagenWeb/" target="_blank" rel="noopener noreferrer">Built by DagenWeb &#8599;</a>
+                <a href="https://simon-dagenhart.github.io/DagenWeb/" target="_blank" rel="noopener noreferrer" data-ar="بُني بواسطة DagenWeb &#8599;">Built by DagenWeb &#8599;</a>
             </address>
         </div>
     </div>
     <div class="container footer-bottom">
-        <p>&copy; <span id="year"></span> Learn it twisted. All rights reserved. (Demo site — school, names, and data are fictional.)</p>
+        <p>&copy; <span id="year"></span> Learn it twisted. <span data-ar="جميع الحقوق محفوظة. (موقع تجريبي — اسم المدرسة والبيانات وهمية.)">All rights reserved. (Demo site — school, names, and data are fictional.)</span></p>
     </div>
 </footer>
 <script src="../assets/js/main.js"></script>

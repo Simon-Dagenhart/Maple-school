@@ -8,7 +8,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22><path d=%22M4,28 C8,24 3,20 10,17 C17,14 9,10 16,6 C19,3 22,5 27,2%22 fill=%22none%22 stroke=%22%238b5a2b%22 stroke-width=%222.6%22 stroke-linecap=%22round%22/><ellipse cx=%2211%22 cy=%2215.5%22 rx=%223.4%22 ry=%221.7%22 fill=%22%232fbf71%22 transform=%22rotate(-35 11 15.5)%22/><ellipse cx=%2220.5%22 cy=%226.5%22 rx=%223.2%22 ry=%221.6%22 fill=%22%232fbf71%22 transform=%22rotate(15 20.5 6.5)%22/><ellipse cx=%226%22 cy=%2224%22 rx=%222.8%22 ry=%221.4%22 fill=%22%232fbf71%22 transform=%22rotate(-55 6 24)%22/></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -16,16 +16,17 @@
     <div class="container header-inner">
         <a href="index.html" class="logo"><svg class="brand-icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M4,28 C8,24 3,20 10,17 C17,14 9,10 16,6 C19,3 22,5 27,2" fill="none" stroke="#8b5a2b" stroke-width="2.6" stroke-linecap="round"/><ellipse cx="11" cy="15.5" rx="3.4" ry="1.7" fill="#2fbf71" transform="rotate(-35 11 15.5)"/><ellipse cx="20.5" cy="6.5" rx="3.2" ry="1.6" fill="#2fbf71" transform="rotate(15 20.5 6.5)"/><ellipse cx="6" cy="24" rx="2.8" ry="1.4" fill="#2fbf71" transform="rotate(-55 6 24)"/></svg> <span class="logo-m">Learn</span> <span class="logo-g">it</span> <span class="logo-e">twisted</span></a>
         <nav class="main-nav">
+            <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch language">العربية</button>
             <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
             <ul id="navList">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="academics.html" class="active">Academics</a></li>
-                <li><a href="admissions.html">Admissions</a></li>
-                <li><a href="news.html">News</a></li>
-                <li><a href="success.html">Success Stories</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html" data-ar="الرئيسية">Home</a></li>
+                <li><a href="about.html" data-ar="نبذة عنا">About</a></li>
+                <li><a href="academics.html" class="active" data-ar="المناهج">Academics</a></li>
+                <li><a href="admissions.html" data-ar="القبول">Admissions</a></li>
+                <li><a href="news.html" data-ar="الأخبار">News</a></li>
+                <li><a href="success.html" data-ar="قصص النجاح">Success Stories</a></li>
+                <li><a href="events.html" data-ar="الفعاليات">Events</a></li>
+                <li><a href="contact.html" data-ar="تواصل">Contact</a></li>
             </ul>
         </nav>
     </div>
@@ -34,33 +35,33 @@
 <main>
 <section class="page-hero">
     <div class="container">
-        <h1>Academics</h1>
-        <p>A well-rounded K-5 curriculum built on strong fundamentals, hands-on discovery, and small class sizes.</p>
+        <h1 data-ar="المناهج">Academics</h1>
+        <p data-ar="منهج شامل للمرحلة الابتدائية مبني على أساسيات قوية، واكتشاف عملي، وصفوف صغيرة.">A well-rounded K-5 curriculum built on strong fundamentals, hands-on discovery, and small class sizes.</p>
     </div>
 </section>
 
 <section class="section">
     <div class="container">
         <div class="section-head">
-            <span class="eyebrow">Grade levels</span>
-            <h2 class="section-title">Kindergarten Through 5th Grade</h2>
-            <p class="section-sub">Every grade builds on the last, with consistent expectations and close teacher collaboration across levels.</p>
+            <span class="eyebrow" data-ar="المستويات الدراسية">Grade levels</span>
+            <h2 class="section-title" data-ar="من الروضة حتى الصف الخامس">Kindergarten Through 5th Grade</h2>
+            <p class="section-sub" data-ar="كل صف يُبنى على ما قبله، بتوقعات ثابتة وتعاون وثيق بين المعلمين عبر المستويات.">Every grade builds on the last, with consistent expectations and close teacher collaboration across levels.</p>
         </div>
         <div class="grid grid-3">
             <div class="card">
                 <div class="icon-badge bg-blue">🧸</div>
-                <h3>Kindergarten – 1st Grade</h3>
-                <p>Foundational phonics, number sense, and social-emotional skills through play-based, hands-on learning.</p>
+                <h3 data-ar="الروضة – الصف الأول">Kindergarten – 1st Grade</h3>
+                <p data-ar="أساسيات الصوتيات، والحس العددي، والمهارات الاجتماعية والعاطفية من خلال تعلّم قائم على اللعب والممارسة.">Foundational phonics, number sense, and social-emotional skills through play-based, hands-on learning.</p>
             </div>
             <div class="card">
                 <div class="icon-badge bg-green">📗</div>
-                <h3>2nd – 3rd Grade</h3>
-                <p>Fluent reading and writing, multiplication and division, and an introduction to research projects.</p>
+                <h3 data-ar="الصف الثاني – الثالث">2nd – 3rd Grade</h3>
+                <p data-ar="القراءة والكتابة بطلاقة، والضرب والقسمة، ومقدمة في مشاريع البحث.">Fluent reading and writing, multiplication and division, and an introduction to research projects.</p>
             </div>
             <div class="card">
                 <div class="icon-badge bg-orange">📘</div>
-                <h3>4th – 5th Grade</h3>
-                <p>Deeper analysis in reading, multi-step math and pre-algebra readiness, and middle-school preparation.</p>
+                <h3 data-ar="الصف الرابع – الخامس">4th – 5th Grade</h3>
+                <p data-ar="تحليل أعمق في القراءة، ورياضيات متعددة الخطوات والاستعداد للجبر المبدئي، والتحضير للمرحلة المتوسطة.">Deeper analysis in reading, multi-step math and pre-algebra readiness, and middle-school preparation.</p>
             </div>
         </div>
     </div>
@@ -69,49 +70,49 @@
 <section class="section section-alt">
     <div class="container">
         <div class="section-head">
-            <span class="eyebrow">Core subjects</span>
-            <h2 class="section-title">Our Curriculum</h2>
+            <span class="eyebrow" data-ar="المواد الأساسية">Core subjects</span>
+            <h2 class="section-title" data-ar="منهجنا الدراسي">Our Curriculum</h2>
         </div>
         <div class="grid grid-3">
             <div class="card">
                 <div class="icon-badge bg-blue">📖</div>
-                <h3>Reading &amp; Writing</h3>
-                <p>Balanced literacy blending phonics, guided reading groups, and daily independent writing time.</p>
+                <h3 data-ar="القراءة والكتابة">Reading &amp; Writing</h3>
+                <p data-ar="محو أمية متوازن يجمع بين الصوتيات، ومجموعات القراءة الموجهة، ووقت كتابة مستقل يومي.">Balanced literacy blending phonics, guided reading groups, and daily independent writing time.</p>
             </div>
             <div class="card">
                 <div class="icon-badge bg-yellow">➗</div>
-                <h3>Mathematics</h3>
-                <p>Hands-on, problem-based math using manipulatives before moving to abstract practice.</p>
+                <h3 data-ar="الرياضيات">Mathematics</h3>
+                <p data-ar="رياضيات عملية قائمة على حل المشكلات باستخدام أدوات ملموسة قبل الانتقال إلى التمرين المجرد.">Hands-on, problem-based math using manipulatives before moving to abstract practice.</p>
             </div>
             <div class="card">
                 <div class="icon-badge bg-green">🔬</div>
-                <h3>Science</h3>
-                <p>Weekly labs and experiments covering life, earth, and physical science standards.</p>
+                <h3 data-ar="العلوم">Science</h3>
+                <p data-ar="مختبرات وتجارب أسبوعية تغطي معايير علوم الحياة والأرض والفيزياء.">Weekly labs and experiments covering life, earth, and physical science standards.</p>
             </div>
             <div class="card">
                 <div class="icon-badge bg-orange">🗺️</div>
-                <h3>Social Studies</h3>
-                <p>Local and world history, geography, and civics through projects and storytelling.</p>
+                <h3 data-ar="الدراسات الاجتماعية">Social Studies</h3>
+                <p data-ar="التاريخ المحلي والعالمي، والجغرافيا، والتربية المدنية من خلال المشاريع ورواية القصص.">Local and world history, geography, and civics through projects and storytelling.</p>
             </div>
             <div class="card">
                 <div class="icon-badge bg-blue">🎨</div>
-                <h3>Art &amp; Music</h3>
-                <p>Weekly dedicated art and music instruction, plus an annual spring showcase for every grade.</p>
+                <h3 data-ar="الفن والموسيقى">Art &amp; Music</h3>
+                <p data-ar="تعليم فني وموسيقي أسبوعي مخصص، بالإضافة إلى معرض ربيعي سنوي لكل صف.">Weekly dedicated art and music instruction, plus an annual spring showcase for every grade.</p>
             </div>
             <div class="card">
                 <div class="icon-badge bg-green">🏃</div>
-                <h3>Physical Education</h3>
-                <p>Daily recess plus twice-weekly PE focused on teamwork, coordination, and healthy habits.</p>
+                <h3 data-ar="التربية البدنية">Physical Education</h3>
+                <p data-ar="استراحة يومية بالإضافة إلى حصتي رياضة أسبوعيًا تركّز على العمل الجماعي والتناسق والعادات الصحية.">Daily recess plus twice-weekly PE focused on teamwork, coordination, and healthy habits.</p>
             </div>
             <div class="card">
                 <div class="icon-badge bg-yellow">💻</div>
-                <h3>Technology</h3>
-                <p>Weekly computer lab time covering typing, digital citizenship, and beginner coding (K-5 friendly Scratch projects).</p>
+                <h3 data-ar="التقنية">Technology</h3>
+                <p data-ar="وقت أسبوعي في مختبر الحاسوب يغطي الطباعة، والمواطنة الرقمية، والبرمجة للمبتدئين (مشاريع Scratch مناسبة للمرحلة الابتدائية).">Weekly computer lab time covering typing, digital citizenship, and beginner coding (K-5 friendly Scratch projects).</p>
             </div>
             <div class="card">
                 <div class="icon-badge bg-orange">🌍</div>
-                <h3>World Language</h3>
-                <p>Introductory Spanish for all students starting in 2nd grade, twice weekly.</p>
+                <h3 data-ar="لغة عالمية">World Language</h3>
+                <p data-ar="إسبانية تمهيدية لجميع الطلاب ابتداءً من الصف الثاني، مرتين أسبوعيًا.">Introductory Spanish for all students starting in 2nd grade, twice weekly.</p>
             </div>
         </div>
     </div>
@@ -120,25 +121,25 @@
 <section class="section">
     <div class="container">
         <div class="section-head">
-            <span class="eyebrow">Support for every learner</span>
-            <h2 class="section-title">Specialized Programs</h2>
+            <span class="eyebrow" data-ar="دعم لكل متعلّم">Support for every learner</span>
+            <h2 class="section-title" data-ar="برامج متخصصة">Specialized Programs</h2>
         </div>
         <div class="grid grid-2">
             <div class="card">
-                <h3>🌟 Gifted &amp; Enrichment</h3>
-                <p>Pull-out enrichment groups and differentiated classroom projects for students ready to go deeper.</p>
+                <h3 data-ar="🌟 الموهوبون والإثراء">🌟 Gifted &amp; Enrichment</h3>
+                <p data-ar="مجموعات إثراء خارج الصف ومشاريع صفية متمايزة للطلاب المستعدين للتعمق أكثر.">Pull-out enrichment groups and differentiated classroom projects for students ready to go deeper.</p>
             </div>
             <div class="card">
-                <h3>🧩 Special Education</h3>
-                <p>Individualized support plans, a dedicated resource room, and inclusive co-taught classrooms.</p>
+                <h3 data-ar="🧩 التربية الخاصة">🧩 Special Education</h3>
+                <p data-ar="خطط دعم فردية، وغرفة موارد مخصصة، وصفوف دمج بتدريس مشترك.">Individualized support plans, a dedicated resource room, and inclusive co-taught classrooms.</p>
             </div>
             <div class="card">
-                <h3>🗣️ English Language Learners</h3>
-                <p>Dedicated ESL instruction alongside full participation in general education classrooms.</p>
+                <h3 data-ar="🗣️ متعلّمو اللغة الإنجليزية">🗣️ English Language Learners</h3>
+                <p data-ar="تعليم مخصص للغة الإنجليزية كلغة ثانية إلى جانب مشاركة كاملة في صفوف التعليم العام.">Dedicated ESL instruction alongside full participation in general education classrooms.</p>
             </div>
             <div class="card">
-                <h3>🕐 After-School Programs</h3>
-                <p>Homework club, robotics, chess, art studio, and a licensed after-care program until 6:00 PM.</p>
+                <h3 data-ar="🕐 برامج ما بعد الدوام">🕐 After-School Programs</h3>
+                <p data-ar="نادي الواجبات، والروبوتات، والشطرنج، واستوديو الفن، وبرنامج رعاية مرخّص حتى الساعة 6:00 مساءً.">Homework club, robotics, chess, art studio, and a licensed after-care program until 6:00 PM.</p>
             </div>
         </div>
     </div>
@@ -147,24 +148,24 @@
 <section class="section section-tint">
     <div class="container">
         <div class="section-head">
-            <span class="eyebrow">A typical day</span>
-            <h2 class="section-title">Sample Daily Schedule</h2>
-            <p class="section-sub">Grade 3 example — schedules vary slightly by grade level.</p>
+            <span class="eyebrow" data-ar="يوم اعتيادي">A typical day</span>
+            <h2 class="section-title" data-ar="نموذج الجدول اليومي">Sample Daily Schedule</h2>
+            <p class="section-sub" data-ar="مثال للصف الثالث — تختلف الجداول قليلًا حسب المستوى الدراسي.">Grade 3 example — schedules vary slightly by grade level.</p>
         </div>
         <div class="table-wrap" style="max-width:760px;margin:0 auto;">
             <table>
-                <thead><tr><th>Time</th><th>Activity</th></tr></thead>
+                <thead><tr><th data-ar="الوقت">Time</th><th data-ar="النشاط">Activity</th></tr></thead>
                 <tbody>
-                    <tr><td>8:00 – 8:15</td><td>Morning Circle &amp; Attendance</td></tr>
-                    <tr><td>8:15 – 9:30</td><td>Reading &amp; Writing Block</td></tr>
-                    <tr><td>9:30 – 10:30</td><td>Mathematics</td></tr>
-                    <tr><td>10:30 – 10:45</td><td>Recess</td></tr>
-                    <tr><td>10:45 – 11:30</td><td>Science or Social Studies (alternating)</td></tr>
-                    <tr><td>11:30 – 12:15</td><td>Lunch</td></tr>
-                    <tr><td>12:15 – 1:00</td><td>Art, Music, PE, or Technology (rotating)</td></tr>
-                    <tr><td>1:00 – 2:15</td><td>Reading Groups &amp; Independent Work</td></tr>
-                    <tr><td>2:15 – 2:50</td><td>Enrichment / Intervention Block</td></tr>
-                    <tr><td>2:50 – 3:00</td><td>Pack-Up &amp; Dismissal</td></tr>
+                    <tr><td>8:00 – 8:15</td><td data-ar="حلقة الصباح والحضور">Morning Circle &amp; Attendance</td></tr>
+                    <tr><td>8:15 – 9:30</td><td data-ar="حصة القراءة والكتابة">Reading &amp; Writing Block</td></tr>
+                    <tr><td>9:30 – 10:30</td><td data-ar="الرياضيات">Mathematics</td></tr>
+                    <tr><td>10:30 – 10:45</td><td data-ar="استراحة">Recess</td></tr>
+                    <tr><td>10:45 – 11:30</td><td data-ar="العلوم أو الدراسات الاجتماعية (بالتناوب)">Science or Social Studies (alternating)</td></tr>
+                    <tr><td>11:30 – 12:15</td><td data-ar="الغداء">Lunch</td></tr>
+                    <tr><td>12:15 – 1:00</td><td data-ar="فن، موسيقى، رياضة، أو تقنية (بالتناوب)">Art, Music, PE, or Technology (rotating)</td></tr>
+                    <tr><td>1:00 – 2:15</td><td data-ar="مجموعات القراءة والعمل المستقل">Reading Groups &amp; Independent Work</td></tr>
+                    <tr><td>2:15 – 2:50</td><td data-ar="حصة الإثراء / التدخل">Enrichment / Intervention Block</td></tr>
+                    <tr><td>2:50 – 3:00</td><td data-ar="تجهيز الحقائب والانصراف">Pack-Up &amp; Dismissal</td></tr>
                 </tbody>
             </table>
         </div>
@@ -174,10 +175,10 @@
 <section class="section">
     <div class="container text-center">
         <div class="stats-row" style="max-width:760px;margin:0 auto;">
-            <div class="stat"><span class="stat-num">18</span><span class="stat-label">Average class size</span></div>
-            <div class="stat"><span class="stat-num">6</span><span class="stat-label">Grade levels, K–5</span></div>
-            <div class="stat"><span class="stat-num">4</span><span class="stat-label">Specialist subjects weekly</span></div>
-            <div class="stat"><span class="stat-num">100%</span><span class="stat-label">Teachers certified in-subject</span></div>
+            <div class="stat"><span class="stat-num">18</span><span class="stat-label" data-ar="متوسط حجم الصف">Average class size</span></div>
+            <div class="stat"><span class="stat-num">6</span><span class="stat-label" data-ar="مستويات دراسية، من الروضة حتى الخامس">Grade levels, K–5</span></div>
+            <div class="stat"><span class="stat-num">4</span><span class="stat-label" data-ar="مواد تخصصية أسبوعيًا">Specialist subjects weekly</span></div>
+            <div class="stat"><span class="stat-num">100%</span><span class="stat-label" data-ar="معلمون معتمدون في تخصصهم">Teachers certified in-subject</span></div>
         </div>
     </div>
 </section>
@@ -187,36 +188,36 @@
     <div class="container footer-grid">
         <div class="footer-col footer-about">
             <a href="index.html" class="logo"><svg class="brand-icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M4,28 C8,24 3,20 10,17 C17,14 9,10 16,6 C19,3 22,5 27,2" fill="none" stroke="#8b5a2b" stroke-width="2.6" stroke-linecap="round"/><ellipse cx="11" cy="15.5" rx="3.4" ry="1.7" fill="#2fbf71" transform="rotate(-35 11 15.5)"/><ellipse cx="20.5" cy="6.5" rx="3.2" ry="1.6" fill="#2fbf71" transform="rotate(15 20.5 6.5)"/><ellipse cx="6" cy="24" rx="2.8" ry="1.4" fill="#2fbf71" transform="rotate(-55 6 24)"/></svg> Learn it twisted</a>
-            <p>Growing curious minds, kind hearts, and bright futures — together, one school year at a time.</p>
+            <p data-ar="ننمّي عقولًا فضولية، وقلوبًا طيبة، ومستقبلًا مشرقًا — معًا، عامًا دراسيًا تلو الآخر.">Growing curious minds, kind hearts, and bright futures — together, one school year at a time.</p>
         </div>
         <div class="footer-col">
-            <h4>Explore</h4>
+            <h4 data-ar="استكشف">Explore</h4>
             <ul>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="academics.html">Academics</a></li>
-                <li><a href="admissions.html">Admissions</a></li>
-                <li><a href="events.html">Events Calendar</a></li>
+                <li><a href="about.html" data-ar="نبذة عنا">About Us</a></li>
+                <li><a href="academics.html" data-ar="المناهج">Academics</a></li>
+                <li><a href="admissions.html" data-ar="القبول">Admissions</a></li>
+                <li><a href="events.html" data-ar="تقويم الفعاليات">Events Calendar</a></li>
             </ul>
         </div>
         <div class="footer-col">
-            <h4>Community</h4>
+            <h4 data-ar="المجتمع">Community</h4>
             <ul>
-                <li><a href="news.html">School News</a></li>
-                <li><a href="success.html">Success Stories</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="news.html" data-ar="أخبار المدرسة">School News</a></li>
+                <li><a href="success.html" data-ar="قصص النجاح">Success Stories</a></li>
+                <li><a href="contact.html" data-ar="تواصل معنا">Contact Us</a></li>
             </ul>
         </div>
         <div class="footer-col">
-            <h4>Visit Us</h4>
+            <h4 data-ar="تواصل">Visit Us</h4>
             <address>
                 <a href="tel:+9647819767081">+964 781 9767 081</a><br>
                 <a href="mailto:simonkazage007@gmail.com">simonkazage007@gmail.com</a><br>
-                <a href="https://simon-dagenhart.github.io/DagenWeb/" target="_blank" rel="noopener noreferrer">Built by DagenWeb &#8599;</a>
+                <a href="https://simon-dagenhart.github.io/DagenWeb/" target="_blank" rel="noopener noreferrer" data-ar="بُني بواسطة DagenWeb &#8599;">Built by DagenWeb &#8599;</a>
             </address>
         </div>
     </div>
     <div class="container footer-bottom">
-        <p>&copy; <span id="year"></span> Learn it twisted. All rights reserved. (Demo site — school, names, and data are fictional.)</p>
+        <p>&copy; <span id="year"></span> Learn it twisted. <span data-ar="جميع الحقوق محفوظة. (موقع تجريبي — اسم المدرسة والبيانات وهمية.)">All rights reserved. (Demo site — school, names, and data are fictional.)</span></p>
     </div>
 </footer>
 <script src="assets/js/main.js"></script>

@@ -8,7 +8,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22><path d=%22M4,28 C8,24 3,20 10,17 C17,14 9,10 16,6 C19,3 22,5 27,2%22 fill=%22none%22 stroke=%22%238b5a2b%22 stroke-width=%222.6%22 stroke-linecap=%22round%22/><ellipse cx=%2211%22 cy=%2215.5%22 rx=%223.4%22 ry=%221.7%22 fill=%22%232fbf71%22 transform=%22rotate(-35 11 15.5)%22/><ellipse cx=%2220.5%22 cy=%226.5%22 rx=%223.2%22 ry=%221.6%22 fill=%22%232fbf71%22 transform=%22rotate(15 20.5 6.5)%22/><ellipse cx=%226%22 cy=%2224%22 rx=%222.8%22 ry=%221.4%22 fill=%22%232fbf71%22 transform=%22rotate(-55 6 24)%22/></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
@@ -16,16 +16,17 @@
     <div class="container header-inner">
         <a href="../index.html" class="logo"><svg class="brand-icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M4,28 C8,24 3,20 10,17 C17,14 9,10 16,6 C19,3 22,5 27,2" fill="none" stroke="#8b5a2b" stroke-width="2.6" stroke-linecap="round"/><ellipse cx="11" cy="15.5" rx="3.4" ry="1.7" fill="#2fbf71" transform="rotate(-35 11 15.5)"/><ellipse cx="20.5" cy="6.5" rx="3.2" ry="1.6" fill="#2fbf71" transform="rotate(15 20.5 6.5)"/><ellipse cx="6" cy="24" rx="2.8" ry="1.4" fill="#2fbf71" transform="rotate(-55 6 24)"/></svg> <span class="logo-m">Learn</span> <span class="logo-g">it</span> <span class="logo-e">twisted</span></a>
         <nav class="main-nav">
+            <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch language">العربية</button>
             <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
             <ul id="navList">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../about.html">About</a></li>
-                <li><a href="../academics.html">Academics</a></li>
-                <li><a href="../admissions.html">Admissions</a></li>
-                <li><a href="../news.html" class="active">News</a></li>
-                <li><a href="../success.html">Success Stories</a></li>
-                <li><a href="../events.html">Events</a></li>
-                <li><a href="../contact.html">Contact</a></li>
+                <li><a href="../index.html" data-ar="الرئيسية">Home</a></li>
+                <li><a href="../about.html" data-ar="نبذة عنا">About</a></li>
+                <li><a href="../academics.html" data-ar="المناهج">Academics</a></li>
+                <li><a href="../admissions.html" data-ar="القبول">Admissions</a></li>
+                <li><a href="../news.html" class="active" data-ar="الأخبار">News</a></li>
+                <li><a href="../success.html" data-ar="قصص النجاح">Success Stories</a></li>
+                <li><a href="../events.html" data-ar="الفعاليات">Events</a></li>
+                <li><a href="../contact.html" data-ar="تواصل">Contact</a></li>
             </ul>
         </nav>
     </div>
@@ -34,21 +35,21 @@
 <main>
 <section class="section">
     <div class="container narrow">
-        <a href="../news.html" class="back-link">&larr; Back to News</a>
+        <a href="../news.html" class="back-link" data-ar="العودة إلى الأخبار &rarr;">&larr; Back to News</a>
         <div class="article-header">
-            <span class="tag tag-blue">Achievements</span>
-            <h1>Learn it twisted Takes First Place at the Regional Science Fair</h1>
-            <p class="article-meta">June 12, 2026 &middot; Written by the Learn it twisted Communications Team</p>
+            <span class="tag tag-blue" data-ar="إنجازات">Achievements</span>
+            <h1 data-ar="Learn it twisted تحصد المركز الأول في معرض العلوم الإقليمي">Learn it twisted Takes First Place at the Regional Science Fair</h1>
+            <p class="article-meta" data-ar="12 يونيو 2026 &middot; كتبه فريق التواصل في Learn it twisted">June 12, 2026 &middot; Written by the Learn it twisted Communications Team</p>
         </div>
         <div class="article-body">
-            <p>Two Learn it twisted fifth-graders brought home top honors from this year's Tri-District Regional Science Fair, competing against more than 60 entries from schools across the region.</p>
-            <p>Amara Bell and Ben Whitfield spent nine weeks designing, building, and testing a multi-stage water-filtration model that used sand, gravel, activated charcoal, and cotton layers to clean visibly murky water. Their project, titled "Clean Water for Everyone: A Low-Cost Filtration Model," combined science content with a real-world engineering challenge.</p>
-            <blockquote>"We wanted to build something that could actually help people, not just look cool on a poster," said Amara. "We tested five different filter combinations before we found one that worked."</blockquote>
-            <p>The judging panel, made up of local engineers and university science faculty, praised the students' data collection and their ability to explain the engineering design process from start to finish.</p>
-            <h2>A team effort</h2>
-            <p>Their teacher, Mr. Kim, credited weekly after-school science club sessions for giving students the time and space to iterate on their designs. "These two rebuilt their filter four times," he said. "That kind of persistence is exactly what we hope every student takes away from a project like this."</p>
-            <p>The win adds to a strong year for Learn it twisted's science program, which also saw three student teams advance to the district-level Invention Convention this spring.</p>
-            <p>Congratulations to Amara, Ben, and every Learn it twisted student who competed this year!</p>
+            <p data-ar="حصد طالبان من الصف الخامس في Learn it twisted أعلى تكريم في معرض العلوم الإقليمي بين ثلاث مناطق هذا العام، منافسين أكثر من 60 مشاركة من مدارس عبر المنطقة.">Two Learn it twisted fifth-graders brought home top honors from this year's Tri-District Regional Science Fair, competing against more than 60 entries from schools across the region.</p>
+            <p data-ar="أمضت أمارا بيل وبِن ويتفيلد تسعة أسابيع في تصميم وبناء واختبار نموذج تنقية مياه متعدد المراحل استخدم طبقات من الرمل والحصى والفحم المنشط والقطن لتنقية مياه عكرة بوضوح. جمع مشروعهما، المعنون &quot;مياه نظيفة للجميع: نموذج تنقية منخفض التكلفة&quot;، بين المحتوى العلمي وتحدٍّ هندسي واقعي.">Amara Bell and Ben Whitfield spent nine weeks designing, building, and testing a multi-stage water-filtration model that used sand, gravel, activated charcoal, and cotton layers to clean visibly murky water. Their project, titled "Clean Water for Everyone: A Low-Cost Filtration Model," combined science content with a real-world engineering challenge.</p>
+            <blockquote data-ar="&quot;أردنا بناء شيء يمكنه فعلًا مساعدة الناس، لا أن يبدو رائعًا على ملصق فقط،&quot; قالت أمارا. &quot;اختبرنا خمس تركيبات فلاتر مختلفة قبل أن نجد واحدة تعمل.&quot;">"We wanted to build something that could actually help people, not just look cool on a poster," said Amara. "We tested five different filter combinations before we found one that worked."</blockquote>
+            <p data-ar="أشادت لجنة التحكيم، المكوّنة من مهندسين محليين وأساتذة علوم جامعيين، بجمع الطالبين للبيانات وقدرتهما على شرح عملية التصميم الهندسي من البداية للنهاية.">The judging panel, made up of local engineers and university science faculty, praised the students' data collection and their ability to explain the engineering design process from start to finish.</p>
+            <h2 data-ar="جهد جماعي">A team effort</h2>
+            <p data-ar="أشاد معلمهما، الأستاذ كيم، بجلسات نادي العلوم الأسبوعية بعد الدوام لمنح الطلاب الوقت والمساحة لتطوير تصاميمهم. قال: &quot;أعاد هذان الطالبان بناء الفلتر أربع مرات. هذا النوع من المثابرة هو بالضبط ما نأمل أن يكتسبه كل طالب من مشروع كهذا.&quot;">Their teacher, Mr. Kim, credited weekly after-school science club sessions for giving students the time and space to iterate on their designs. "These two rebuilt their filter four times," he said. "That kind of persistence is exactly what we hope every student takes away from a project like this."</p>
+            <p data-ar="يضيف هذا الفوز إلى عام قوي لبرنامج العلوم في Learn it twisted، الذي شهد أيضًا تأهل ثلاثة فرق طلابية إلى مسابقة الاختراع على مستوى المنطقة هذا الربيع.">The win adds to a strong year for Learn it twisted's science program, which also saw three student teams advance to the district-level Invention Convention this spring.</p>
+            <p data-ar="تهانينا لأمارا وبِن ولكل طالب من Learn it twisted شارك هذا العام!">Congratulations to Amara, Ben, and every Learn it twisted student who competed this year!</p>
         </div>
     </div>
 </section>
@@ -58,36 +59,36 @@
     <div class="container footer-grid">
         <div class="footer-col footer-about">
             <a href="../index.html" class="logo"><svg class="brand-icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M4,28 C8,24 3,20 10,17 C17,14 9,10 16,6 C19,3 22,5 27,2" fill="none" stroke="#8b5a2b" stroke-width="2.6" stroke-linecap="round"/><ellipse cx="11" cy="15.5" rx="3.4" ry="1.7" fill="#2fbf71" transform="rotate(-35 11 15.5)"/><ellipse cx="20.5" cy="6.5" rx="3.2" ry="1.6" fill="#2fbf71" transform="rotate(15 20.5 6.5)"/><ellipse cx="6" cy="24" rx="2.8" ry="1.4" fill="#2fbf71" transform="rotate(-55 6 24)"/></svg> Learn it twisted</a>
-            <p>Growing curious minds, kind hearts, and bright futures — together, one school year at a time.</p>
+            <p data-ar="ننمّي عقولًا فضولية، وقلوبًا طيبة، ومستقبلًا مشرقًا — معًا، عامًا دراسيًا تلو الآخر.">Growing curious minds, kind hearts, and bright futures — together, one school year at a time.</p>
         </div>
         <div class="footer-col">
-            <h4>Explore</h4>
+            <h4 data-ar="استكشف">Explore</h4>
             <ul>
-                <li><a href="../about.html">About Us</a></li>
-                <li><a href="../academics.html">Academics</a></li>
-                <li><a href="../admissions.html">Admissions</a></li>
-                <li><a href="../events.html">Events Calendar</a></li>
+                <li><a href="../about.html" data-ar="نبذة عنا">About Us</a></li>
+                <li><a href="../academics.html" data-ar="المناهج">Academics</a></li>
+                <li><a href="../admissions.html" data-ar="القبول">Admissions</a></li>
+                <li><a href="../events.html" data-ar="تقويم الفعاليات">Events Calendar</a></li>
             </ul>
         </div>
         <div class="footer-col">
-            <h4>Community</h4>
+            <h4 data-ar="المجتمع">Community</h4>
             <ul>
-                <li><a href="../news.html">School News</a></li>
-                <li><a href="../success.html">Success Stories</a></li>
-                <li><a href="../contact.html">Contact Us</a></li>
+                <li><a href="../news.html" data-ar="أخبار المدرسة">School News</a></li>
+                <li><a href="../success.html" data-ar="قصص النجاح">Success Stories</a></li>
+                <li><a href="../contact.html" data-ar="تواصل معنا">Contact Us</a></li>
             </ul>
         </div>
         <div class="footer-col">
-            <h4>Visit Us</h4>
+            <h4 data-ar="تواصل">Visit Us</h4>
             <address>
                 <a href="tel:+9647819767081">+964 781 9767 081</a><br>
                 <a href="mailto:simonkazage007@gmail.com">simonkazage007@gmail.com</a><br>
-                <a href="https://simon-dagenhart.github.io/DagenWeb/" target="_blank" rel="noopener noreferrer">Built by DagenWeb &#8599;</a>
+                <a href="https://simon-dagenhart.github.io/DagenWeb/" target="_blank" rel="noopener noreferrer" data-ar="بُني بواسطة DagenWeb &#8599;">Built by DagenWeb &#8599;</a>
             </address>
         </div>
     </div>
     <div class="container footer-bottom">
-        <p>&copy; <span id="year"></span> Learn it twisted. All rights reserved. (Demo site — school, names, and data are fictional.)</p>
+        <p>&copy; <span id="year"></span> Learn it twisted. <span data-ar="جميع الحقوق محفوظة. (موقع تجريبي — اسم المدرسة والبيانات وهمية.)">All rights reserved. (Demo site — school, names, and data are fictional.)</span></p>
     </div>
 </footer>
 <script src="../assets/js/main.js"></script>

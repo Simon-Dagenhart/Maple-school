@@ -8,7 +8,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22><path d=%22M4,28 C8,24 3,20 10,17 C17,14 9,10 16,6 C19,3 22,5 27,2%22 fill=%22none%22 stroke=%22%238b5a2b%22 stroke-width=%222.6%22 stroke-linecap=%22round%22/><ellipse cx=%2211%22 cy=%2215.5%22 rx=%223.4%22 ry=%221.7%22 fill=%22%232fbf71%22 transform=%22rotate(-35 11 15.5)%22/><ellipse cx=%2220.5%22 cy=%226.5%22 rx=%223.2%22 ry=%221.6%22 fill=%22%232fbf71%22 transform=%22rotate(15 20.5 6.5)%22/><ellipse cx=%226%22 cy=%2224%22 rx=%222.8%22 ry=%221.4%22 fill=%22%232fbf71%22 transform=%22rotate(-55 6 24)%22/></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -16,16 +16,17 @@
     <div class="container header-inner">
         <a href="index.html" class="logo"><svg class="brand-icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M4,28 C8,24 3,20 10,17 C17,14 9,10 16,6 C19,3 22,5 27,2" fill="none" stroke="#8b5a2b" stroke-width="2.6" stroke-linecap="round"/><ellipse cx="11" cy="15.5" rx="3.4" ry="1.7" fill="#2fbf71" transform="rotate(-35 11 15.5)"/><ellipse cx="20.5" cy="6.5" rx="3.2" ry="1.6" fill="#2fbf71" transform="rotate(15 20.5 6.5)"/><ellipse cx="6" cy="24" rx="2.8" ry="1.4" fill="#2fbf71" transform="rotate(-55 6 24)"/></svg> <span class="logo-m">Learn</span> <span class="logo-g">it</span> <span class="logo-e">twisted</span></a>
         <nav class="main-nav">
+            <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch language">العربية</button>
             <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
             <ul id="navList">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html" class="active">About</a></li>
-                <li><a href="academics.html">Academics</a></li>
-                <li><a href="admissions.html">Admissions</a></li>
-                <li><a href="news.html">News</a></li>
-                <li><a href="success.html">Success Stories</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html" data-ar="الرئيسية">Home</a></li>
+                <li><a href="about.html" class="active" data-ar="نبذة عنا">About</a></li>
+                <li><a href="academics.html" data-ar="المناهج">Academics</a></li>
+                <li><a href="admissions.html" data-ar="القبول">Admissions</a></li>
+                <li><a href="news.html" data-ar="الأخبار">News</a></li>
+                <li><a href="success.html" data-ar="قصص النجاح">Success Stories</a></li>
+                <li><a href="events.html" data-ar="الفعاليات">Events</a></li>
+                <li><a href="contact.html" data-ar="تواصل">Contact</a></li>
             </ul>
         </nav>
     </div>
@@ -34,8 +35,8 @@
 <main>
 <section class="page-hero">
     <div class="container">
-        <h1>About Learn it twisted</h1>
-        <p>32 years of educating curious, kind, and confident kids.</p>
+        <h1 data-ar="نبذة عن Learn it twisted">About Learn it twisted</h1>
+        <p data-ar="32 عامًا من تعليم أطفال فضوليين، لطفاء، وواثقين.">32 years of educating curious, kind, and confident kids.</p>
     </div>
 </section>
 
@@ -44,13 +45,13 @@
         <div class="grid grid-2">
             <div class="card">
                 <div class="icon-badge bg-blue">🎯</div>
-                <h3>Our Mission</h3>
-                <p>To provide every child with a joyful, rigorous elementary education that builds strong readers, curious mathematicians, and kind community members — regardless of background or ability.</p>
+                <h3 data-ar="رسالتنا">Our Mission</h3>
+                <p data-ar="تزويد كل طفل بتعليم ابتدائي ممتع وجاد يبني قراءً أقوياء، ورياضيين فضوليين، وأفرادًا لطفاء في المجتمع — بغض النظر عن الخلفية أو القدرة.">To provide every child with a joyful, rigorous elementary education that builds strong readers, curious mathematicians, and kind community members — regardless of background or ability.</p>
             </div>
             <div class="card">
                 <div class="icon-badge bg-green">🔭</div>
-                <h3>Our Vision</h3>
-                <p>A school where every student leaves fifth grade confident in who they are, excited to keep learning, and equipped with the academic and social foundation to thrive in middle school and beyond.</p>
+                <h3 data-ar="رؤيتنا">Our Vision</h3>
+                <p data-ar="مدرسة يغادر فيها كل طالب الصف الخامس واثقًا بذاته، ومتحمسًا لمواصلة التعلّم، ومزودًا بالأساس الأكاديمي والاجتماعي للنجاح في المرحلة المتوسطة وما بعدها.">A school where every student leaves fifth grade confident in who they are, excited to keep learning, and equipped with the academic and social foundation to thrive in middle school and beyond.</p>
             </div>
         </div>
     </div>
@@ -59,20 +60,20 @@
 <section class="section section-alt">
     <div class="container">
         <div class="section-head">
-            <span class="eyebrow">A note from our principal</span>
-            <h2 class="section-title">Welcome to Learn it twisted</h2>
+            <span class="eyebrow" data-ar="كلمة من مديرتنا">A note from our principal</span>
+            <h2 class="section-title" data-ar="مرحبًا بكم في Learn it twisted">Welcome to Learn it twisted</h2>
         </div>
         <div class="card" style="max-width:760px;margin:0 auto;">
             <div class="testimonial-author" style="margin-bottom:1rem;">
                 <div class="avatar avatar-blue">DP</div>
                 <div>
                     <div class="testimonial-name">Dana Porter</div>
-                    <div class="testimonial-role">Principal, Learn it twisted</div>
+                    <div class="testimonial-role" data-ar="مديرة، Learn it twisted">Principal, Learn it twisted</div>
                 </div>
             </div>
-            <p>Every family who walks through our doors is looking for the same thing: a place where their child is seen, supported, and pushed to grow. That's the promise our staff makes every single day.</p>
-            <p>Whether your child is just starting kindergarten or arriving mid-year in fourth grade, you'll find small class sizes, teachers who know your child by name within the first week, and a community that shows up for one another. I'd love to show you around — reach out any time.</p>
-            <p style="margin-bottom:0;"><em>— Ms. Porter</em></p>
+            <p data-ar="كل عائلة تعبر أبوابنا تبحث عن الشيء نفسه: مكان يُرى فيه طفلها، ويُدعم، ويُشجَّع على النمو. هذا هو الوعد الذي يقدمه طاقمنا كل يوم.">Every family who walks through our doors is looking for the same thing: a place where their child is seen, supported, and pushed to grow. That's the promise our staff makes every single day.</p>
+            <p data-ar="سواء كان طفلك بدأ الروضة للتو أو انضم في منتصف العام في الصف الرابع، ستجد صفوفًا صغيرة، ومعلمين يعرفون اسم طفلك خلال الأسبوع الأول، ومجتمعًا يسانده الجميع. يسعدني أن أريكم المدرسة — تواصلوا معي في أي وقت.">Whether your child is just starting kindergarten or arriving mid-year in fourth grade, you'll find small class sizes, teachers who know your child by name within the first week, and a community that shows up for one another. I'd love to show you around — reach out any time.</p>
+            <p style="margin-bottom:0;"><em data-ar="— السيدة بورتر">— Ms. Porter</em></p>
         </div>
     </div>
 </section>
@@ -80,29 +81,29 @@
 <section class="section">
     <div class="container">
         <div class="section-head">
-            <span class="eyebrow">What we stand for</span>
-            <h2 class="section-title">Our Core Values</h2>
+            <span class="eyebrow" data-ar="ما نؤمن به">What we stand for</span>
+            <h2 class="section-title" data-ar="قيمنا الأساسية">Our Core Values</h2>
         </div>
         <div class="grid grid-4">
             <div class="card">
                 <div class="icon-badge bg-blue">🧠</div>
-                <h3>Curiosity</h3>
-                <p>We reward questions as much as answers, and build lessons around real problems worth solving.</p>
+                <h3 data-ar="الفضول">Curiosity</h3>
+                <p data-ar="نكافئ الأسئلة بقدر الإجابات، ونبني الدروس حول مشكلات حقيقية تستحق الحل.">We reward questions as much as answers, and build lessons around real problems worth solving.</p>
             </div>
             <div class="card">
                 <div class="icon-badge bg-orange">💛</div>
-                <h3>Kindness</h3>
-                <p>Every classroom starts the day with a community circle — because how we treat each other matters as much as what we learn.</p>
+                <h3 data-ar="اللطف">Kindness</h3>
+                <p data-ar="كل صف يبدأ يومه بحلقة مجتمعية — لأن طريقة تعاملنا مع بعضنا لا تقل أهمية عمّا نتعلمه.">Every classroom starts the day with a community circle — because how we treat each other matters as much as what we learn.</p>
             </div>
             <div class="card">
                 <div class="icon-badge bg-green">💪</div>
-                <h3>Perseverance</h3>
-                <p>We teach kids that mistakes are part of learning, not something to fear.</p>
+                <h3 data-ar="المثابرة">Perseverance</h3>
+                <p data-ar="نعلّم الأطفال أن الأخطاء جزء من التعلّم، وليست شيئًا يُخشى منه.">We teach kids that mistakes are part of learning, not something to fear.</p>
             </div>
             <div class="card">
                 <div class="icon-badge bg-yellow">🌍</div>
-                <h3>Community</h3>
-                <p>Students, families, and staff all have a voice in shaping our school culture.</p>
+                <h3 data-ar="المجتمع">Community</h3>
+                <p data-ar="للطلاب والعائلات والطاقم جميعًا صوت في تشكيل ثقافة مدرستنا.">Students, families, and staff all have a voice in shaping our school culture.</p>
             </div>
         </div>
     </div>
@@ -111,36 +112,36 @@
 <section class="section section-tint">
     <div class="container">
         <div class="section-head">
-            <span class="eyebrow">Our story</span>
-            <h2 class="section-title">A Brief History</h2>
+            <span class="eyebrow" data-ar="قصتنا">Our story</span>
+            <h2 class="section-title" data-ar="لمحة تاريخية">A Brief History</h2>
         </div>
         <ol class="timeline" style="max-width:760px;margin:0 auto;">
             <li>
                 <span class="timeline-year">1994</span>
                 <div>
-                    <h4>Learn it twisted is founded</h4>
-                    <p>Opened with 120 students and six classrooms to serve a growing community.</p>
+                    <h4 data-ar="تأسيس Learn it twisted">Learn it twisted is founded</h4>
+                    <p data-ar="افتُتحت بـ 120 طالبًا وستة صفوف لخدمة مجتمع متنامٍ.">Opened with 120 students and six classrooms to serve a growing community.</p>
                 </div>
             </li>
             <li>
                 <span class="timeline-year">2008</span>
                 <div>
-                    <h4>New science &amp; arts wing added</h4>
-                    <p>A dedicated science lab, art studio, and music room expanded what we could offer students.</p>
+                    <h4 data-ar="إضافة جناح جديد للعلوم والفنون">New science &amp; arts wing added</h4>
+                    <p data-ar="مختبر علوم مخصص، واستوديو فني، وغرفة موسيقى وسّعت ما يمكننا تقديمه للطلاب.">A dedicated science lab, art studio, and music room expanded what we could offer students.</p>
                 </div>
             </li>
             <li>
                 <span class="timeline-year">2016</span>
                 <div>
-                    <h4>Named a State Blue Ribbon School</h4>
-                    <p>Recognized for outstanding academic progress and closing achievement gaps.</p>
+                    <h4 data-ar="تسمّيت كمدرسة الشريط الأزرق الحكومية">Named a State Blue Ribbon School</h4>
+                    <p data-ar="حصلت على تقدير للتقدم الأكاديمي المتميز وسد فجوات التحصيل.">Recognized for outstanding academic progress and closing achievement gaps.</p>
                 </div>
             </li>
             <li>
                 <span class="timeline-year">2026</span>
                 <div>
-                    <h4>New library wing opens</h4>
-                    <p>Today we serve 480 students with a full library, makerspace, and expanded outdoor learning spaces.</p>
+                    <h4 data-ar="افتتاح جناح المكتبة الجديد">New library wing opens</h4>
+                    <p data-ar="نخدم اليوم 480 طالبًا بمكتبة كاملة، وركن ابتكار، ومساحات تعلّم خارجية موسّعة.">Today we serve 480 students with a full library, makerspace, and expanded outdoor learning spaces.</p>
                 </div>
             </li>
         </ol>
@@ -150,34 +151,34 @@
 <section class="section">
     <div class="container">
         <div class="section-head">
-            <span class="eyebrow">Meet the team</span>
-            <h2 class="section-title">Our Staff &amp; Faculty</h2>
-            <p class="section-sub">A few of the people your child will get to know well.</p>
+            <span class="eyebrow" data-ar="تعرّف على الفريق">Meet the team</span>
+            <h2 class="section-title" data-ar="طاقمنا التعليمي والإداري">Our Staff &amp; Faculty</h2>
+            <p class="section-sub" data-ar="بعض الأشخاص الذين سيتعرف عليهم طفلك جيدًا.">A few of the people your child will get to know well.</p>
         </div>
         <div class="grid grid-4">
             <div class="card staff-card">
                 <div class="avatar avatar-blue">DP</div>
                 <h3>Dana Porter</h3>
-                <div class="staff-role">Principal</div>
-                <p>18 years in education, at Learn it twisted since 2019.</p>
+                <div class="staff-role" data-ar="مديرة">Principal</div>
+                <p data-ar="18 عامًا في مجال التعليم، في Learn it twisted منذ 2019.">18 years in education, at Learn it twisted since 2019.</p>
             </div>
             <div class="card staff-card">
                 <div class="avatar avatar-green">MT</div>
                 <h3>Marcus Tran</h3>
-                <div class="staff-role">Assistant Principal</div>
-                <p>Leads student support services and family engagement.</p>
+                <div class="staff-role" data-ar="نائب المدير">Assistant Principal</div>
+                <p data-ar="يقود خدمات دعم الطلاب والتواصل مع العائلات.">Leads student support services and family engagement.</p>
             </div>
             <div class="card staff-card">
                 <div class="avatar avatar-orange">SO</div>
                 <h3>Sofia Ortiz</h3>
-                <div class="staff-role">School Counselor</div>
-                <p>Supports student wellbeing, social skills, and conflict resolution.</p>
+                <div class="staff-role" data-ar="المرشدة الطلابية">School Counselor</div>
+                <p data-ar="تدعم رفاهية الطلاب، والمهارات الاجتماعية، وحل النزاعات.">Supports student wellbeing, social skills, and conflict resolution.</p>
             </div>
             <div class="card staff-card">
                 <div class="avatar avatar-blue">RK</div>
                 <h3>Robert Kim</h3>
-                <div class="staff-role">Curriculum Coordinator</div>
-                <p>Oversees reading, math, and science programs across all grades.</p>
+                <div class="staff-role" data-ar="منسّق المناهج">Curriculum Coordinator</div>
+                <p data-ar="يشرف على برامج القراءة والرياضيات والعلوم في جميع الصفوف.">Oversees reading, math, and science programs across all grades.</p>
             </div>
         </div>
     </div>
@@ -185,13 +186,13 @@
 
 <section class="section section-alt">
     <div class="container text-center">
-        <span class="eyebrow">Accreditation</span>
-        <h2 class="section-title">Recognized for Excellence</h2>
-        <p class="section-sub" style="margin-bottom:1.5rem;">Learn it twisted is fully accredited by the State Board of Education and has been recognized as a State Blue Ribbon School.</p>
+        <span class="eyebrow" data-ar="الاعتماد الأكاديمي">Accreditation</span>
+        <h2 class="section-title" data-ar="معترَف بها للتميّز">Recognized for Excellence</h2>
+        <p class="section-sub" style="margin-bottom:1.5rem;" data-ar="Learn it twisted معتمدة بالكامل من مجلس التعليم الحكومي، وحاصلة على تقدير مدرسة الشريط الأزرق الحكومية.">Learn it twisted is fully accredited by the State Board of Education and has been recognized as a State Blue Ribbon School.</p>
         <div class="grid grid-3" style="max-width:820px;margin:0 auto;">
-            <div class="card"><h3 style="margin-bottom:0.2em;">🏅</h3><p style="margin:0;">State Blue Ribbon School (2016, 2023)</p></div>
-            <div class="card"><h3 style="margin-bottom:0.2em;">✅</h3><p style="margin:0;">State Board of Education Accredited</p></div>
-            <div class="card"><h3 style="margin-bottom:0.2em;">🌱</h3><p style="margin:0;">Certified Green &amp; Sustainable Campus</p></div>
+            <div class="card"><h3 style="margin-bottom:0.2em;">🏅</h3><p style="margin:0;" data-ar="مدرسة الشريط الأزرق الحكومية (2016، 2023)">State Blue Ribbon School (2016, 2023)</p></div>
+            <div class="card"><h3 style="margin-bottom:0.2em;">✅</h3><p style="margin:0;" data-ar="معتمدة من مجلس التعليم الحكومي">State Board of Education Accredited</p></div>
+            <div class="card"><h3 style="margin-bottom:0.2em;">🌱</h3><p style="margin:0;" data-ar="حرم معتمد أخضر ومستدام">Certified Green &amp; Sustainable Campus</p></div>
         </div>
     </div>
 </section>
@@ -201,36 +202,36 @@
     <div class="container footer-grid">
         <div class="footer-col footer-about">
             <a href="index.html" class="logo"><svg class="brand-icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M4,28 C8,24 3,20 10,17 C17,14 9,10 16,6 C19,3 22,5 27,2" fill="none" stroke="#8b5a2b" stroke-width="2.6" stroke-linecap="round"/><ellipse cx="11" cy="15.5" rx="3.4" ry="1.7" fill="#2fbf71" transform="rotate(-35 11 15.5)"/><ellipse cx="20.5" cy="6.5" rx="3.2" ry="1.6" fill="#2fbf71" transform="rotate(15 20.5 6.5)"/><ellipse cx="6" cy="24" rx="2.8" ry="1.4" fill="#2fbf71" transform="rotate(-55 6 24)"/></svg> Learn it twisted</a>
-            <p>Growing curious minds, kind hearts, and bright futures — together, one school year at a time.</p>
+            <p data-ar="ننمّي عقولًا فضولية، وقلوبًا طيبة، ومستقبلًا مشرقًا — معًا، عامًا دراسيًا تلو الآخر.">Growing curious minds, kind hearts, and bright futures — together, one school year at a time.</p>
         </div>
         <div class="footer-col">
-            <h4>Explore</h4>
+            <h4 data-ar="استكشف">Explore</h4>
             <ul>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="academics.html">Academics</a></li>
-                <li><a href="admissions.html">Admissions</a></li>
-                <li><a href="events.html">Events Calendar</a></li>
+                <li><a href="about.html" data-ar="نبذة عنا">About Us</a></li>
+                <li><a href="academics.html" data-ar="المناهج">Academics</a></li>
+                <li><a href="admissions.html" data-ar="القبول">Admissions</a></li>
+                <li><a href="events.html" data-ar="تقويم الفعاليات">Events Calendar</a></li>
             </ul>
         </div>
         <div class="footer-col">
-            <h4>Community</h4>
+            <h4 data-ar="المجتمع">Community</h4>
             <ul>
-                <li><a href="news.html">School News</a></li>
-                <li><a href="success.html">Success Stories</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="news.html" data-ar="أخبار المدرسة">School News</a></li>
+                <li><a href="success.html" data-ar="قصص النجاح">Success Stories</a></li>
+                <li><a href="contact.html" data-ar="تواصل معنا">Contact Us</a></li>
             </ul>
         </div>
         <div class="footer-col">
-            <h4>Visit Us</h4>
+            <h4 data-ar="تواصل">Visit Us</h4>
             <address>
                 <a href="tel:+9647819767081">+964 781 9767 081</a><br>
                 <a href="mailto:simonkazage007@gmail.com">simonkazage007@gmail.com</a><br>
-                <a href="https://simon-dagenhart.github.io/DagenWeb/" target="_blank" rel="noopener noreferrer">Built by DagenWeb &#8599;</a>
+                <a href="https://simon-dagenhart.github.io/DagenWeb/" target="_blank" rel="noopener noreferrer" data-ar="بُني بواسطة DagenWeb &#8599;">Built by DagenWeb &#8599;</a>
             </address>
         </div>
     </div>
     <div class="container footer-bottom">
-        <p>&copy; <span id="year"></span> Learn it twisted. All rights reserved. (Demo site — school, names, and data are fictional.)</p>
+        <p>&copy; <span id="year"></span> Learn it twisted. <span data-ar="جميع الحقوق محفوظة. (موقع تجريبي — اسم المدرسة والبيانات وهمية.)">All rights reserved. (Demo site — school, names, and data are fictional.)</span></p>
     </div>
 </footer>
 <script src="assets/js/main.js"></script>

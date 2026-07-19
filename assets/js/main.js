@@ -17,6 +17,42 @@ document.addEventListener('DOMContentLoaded', function () {
     var yearEl = document.getElementById('year');
     if (yearEl) yearEl.textContent = new Date().getFullYear();
 
+    // Language toggle (English/Arabic). Every translatable element carries
+    // a data-ar="..." attribute holding its Arabic text right next to the
+    // English text already in the HTML — applyLang() swaps between them
+    // and caches the original English on first switch so it can restore it.
+    // Elements with nested tags (e.g. a paragraph with a link inside) use
+    // data-ar-html instead, which swaps innerHTML rather than textContent
+    // so the nested markup survives the translation.
+    var langToggle = document.getElementById('langToggle');
+    if (langToggle) {
+        var applyLang = function (lang) {
+            document.documentElement.lang = lang === 'ar' ? 'ar' : 'en';
+            document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+            document.querySelectorAll('[data-ar]').forEach(function (el) {
+                if (el.dataset.en === undefined) el.dataset.en = el.textContent;
+                el.textContent = lang === 'ar' ? el.dataset.ar : el.dataset.en;
+            });
+            document.querySelectorAll('[data-ar-html]').forEach(function (el) {
+                if (el.dataset.enHtml === undefined) el.dataset.enHtml = el.innerHTML;
+                el.innerHTML = lang === 'ar' ? el.dataset.arHtml : el.dataset.enHtml;
+            });
+            document.querySelectorAll('[data-ar-placeholder]').forEach(function (el) {
+                if (el.dataset.enPlaceholder === undefined) el.dataset.enPlaceholder = el.getAttribute('placeholder') || '';
+                el.setAttribute('placeholder', lang === 'ar' ? el.dataset.arPlaceholder : el.dataset.enPlaceholder);
+            });
+            langToggle.textContent = lang === 'ar' ? 'English' : 'العربية';
+            localStorage.setItem('learnittwisted-lang', lang);
+        };
+
+        applyLang(localStorage.getItem('learnittwisted-lang') || 'en');
+
+        langToggle.addEventListener('click', function () {
+            var current = document.documentElement.lang === 'ar' ? 'ar' : 'en';
+            applyLang(current === 'ar' ? 'en' : 'ar');
+        });
+    }
+
     // Contact form -> mailto (static hosting has no server to receive submissions)
     var form = document.getElementById('contactForm');
     if (form) {
@@ -36,7 +72,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
             window.location.href = mailto;
             if (status) {
-                status.textContent = 'Opening your email app to send this message to the school office...';
+                var lang = document.documentElement.lang === 'ar' ? 'ar' : 'en';
+                status.textContent = lang === 'ar'
+                    ? 'يتم فتح تطبيق البريد الإلكتروني لإرسال هذه الرسالة...'
+                    : 'Opening your email app to send this message...';
                 status.classList.add('ok');
             }
         });

@@ -90,7 +90,20 @@ ul { padding-left: 1.2em; }
 .logo .logo-e { color: var(--orange); }
 .brand-icon { width: 1.4em; height: 1.4em; flex-shrink: 0; }
 
-.main-nav { display: flex; align-items: center; }
+.main-nav { display: flex; align-items: center; gap: 0.6rem; }
+
+.lang-toggle {
+    background: transparent;
+    color: var(--blue-dark);
+    border: 2px solid var(--blue);
+    border-radius: 999px;
+    padding: 0.4rem 0.9rem;
+    font-weight: 700;
+    font-size: 0.85rem;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+.lang-toggle:hover { background: var(--blue-light); }
 
 .nav-toggle {
     display: none;
@@ -528,4 +541,35 @@ address { font-style: normal; font-size: 0.92rem; line-height: 1.9; }
     .footer-grid { grid-template-columns: 1fr; }
     .timeline li, .event-card, .step { grid-template-columns: 1fr; }
     .timeline-year { margin-bottom: 0.2rem; }
+}
+
+/* ==========================================================================
+   Arabic / RTL
+   ------------------------------------------------------------------------
+   Toggled by setting dir="rtl" lang="ar" on <html> (see main.js). Flex/grid
+   row layouts flip direction on their own once dir="rtl" is set — only the
+   few hardcoded left/right rules below need manual mirroring. Tajawal
+   takes over for Arabic since Baloo 2/Nunito have no Arabic glyphs.
+   ========================================================================== */
+
+[dir="rtl"] body {
+    font-family: 'Tajawal', system-ui, sans-serif;
+}
+
+[dir="rtl"] h1, [dir="rtl"] h2, [dir="rtl"] h3, [dir="rtl"] h4 {
+    font-family: 'Tajawal', system-ui, sans-serif;
+}
+
+[dir="rtl"] ul {
+    padding-left: 0;
+    padding-right: 1.2em;
+}
+
+[dir="rtl"] .article-body blockquote {
+    border-left: none;
+    border-right: 4px solid var(--blue);
+}
+
+[dir="rtl"] th, [dir="rtl"] td {
+    text-align: right;
 }

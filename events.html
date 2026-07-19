@@ -8,7 +8,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22><path d=%22M4,28 C8,24 3,20 10,17 C17,14 9,10 16,6 C19,3 22,5 27,2%22 fill=%22none%22 stroke=%22%238b5a2b%22 stroke-width=%222.6%22 stroke-linecap=%22round%22/><ellipse cx=%2211%22 cy=%2215.5%22 rx=%223.4%22 ry=%221.7%22 fill=%22%232fbf71%22 transform=%22rotate(-35 11 15.5)%22/><ellipse cx=%2220.5%22 cy=%226.5%22 rx=%223.2%22 ry=%221.6%22 fill=%22%232fbf71%22 transform=%22rotate(15 20.5 6.5)%22/><ellipse cx=%226%22 cy=%2224%22 rx=%222.8%22 ry=%221.4%22 fill=%22%232fbf71%22 transform=%22rotate(-55 6 24)%22/></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -16,16 +16,17 @@
     <div class="container header-inner">
         <a href="index.html" class="logo"><svg class="brand-icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M4,28 C8,24 3,20 10,17 C17,14 9,10 16,6 C19,3 22,5 27,2" fill="none" stroke="#8b5a2b" stroke-width="2.6" stroke-linecap="round"/><ellipse cx="11" cy="15.5" rx="3.4" ry="1.7" fill="#2fbf71" transform="rotate(-35 11 15.5)"/><ellipse cx="20.5" cy="6.5" rx="3.2" ry="1.6" fill="#2fbf71" transform="rotate(15 20.5 6.5)"/><ellipse cx="6" cy="24" rx="2.8" ry="1.4" fill="#2fbf71" transform="rotate(-55 6 24)"/></svg> <span class="logo-m">Learn</span> <span class="logo-g">it</span> <span class="logo-e">twisted</span></a>
         <nav class="main-nav">
+            <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch language">العربية</button>
             <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
             <ul id="navList">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="academics.html">Academics</a></li>
-                <li><a href="admissions.html">Admissions</a></li>
-                <li><a href="news.html">News</a></li>
-                <li><a href="success.html">Success Stories</a></li>
-                <li><a href="events.html" class="active">Events</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html" data-ar="الرئيسية">Home</a></li>
+                <li><a href="about.html" data-ar="نبذة عنا">About</a></li>
+                <li><a href="academics.html" data-ar="المناهج">Academics</a></li>
+                <li><a href="admissions.html" data-ar="القبول">Admissions</a></li>
+                <li><a href="news.html" data-ar="الأخبار">News</a></li>
+                <li><a href="success.html" data-ar="قصص النجاح">Success Stories</a></li>
+                <li><a href="events.html" class="active" data-ar="الفعاليات">Events</a></li>
+                <li><a href="contact.html" data-ar="تواصل">Contact</a></li>
             </ul>
         </nav>
     </div>
@@ -34,57 +35,57 @@
 <main>
 <section class="page-hero">
     <div class="container">
-        <h1>Events Calendar</h1>
-        <p>Everything on the calendar this year — from curriculum nights to the last day of school.</p>
+        <h1 data-ar="تقويم الفعاليات">Events Calendar</h1>
+        <p data-ar="كل ما هو مدرج في التقويم هذا العام — من أمسيات المناهج حتى آخر يوم دراسي.">Everything on the calendar this year — from curriculum nights to the last day of school.</p>
     </div>
 </section>
 
 <section class="section">
     <div class="container">
         <div class="section-head">
-            <span class="eyebrow">Coming up</span>
-            <h2 class="section-title">Upcoming Events</h2>
+            <span class="eyebrow" data-ar="قادم قريبًا">Coming up</span>
+            <h2 class="section-title" data-ar="الفعاليات القادمة">Upcoming Events</h2>
         </div>
         <div class="grid grid-2" style="max-width:900px;margin:0 auto;">
             <div class="event-card">
-                <div class="event-date"><span class="day">24</span><span class="mon">Aug</span></div>
-                <div><h3>First Day of School</h3><p>Doors open at 7:45 AM. Half-day dismissal for K-1 during the first week.</p></div>
+                <div class="event-date"><span class="day">24</span><span class="mon" data-ar="أغسطس">Aug</span></div>
+                <div><h3 data-ar="أول يوم دراسي">First Day of School</h3><p data-ar="تُفتح الأبواب الساعة 7:45 صباحًا. انصراف نصف يوم للروضة والصف الأول خلال الأسبوع الأول.">Doors open at 7:45 AM. Half-day dismissal for K-1 during the first week.</p></div>
             </div>
             <div class="event-card">
-                <div class="event-date"><span class="day">4</span><span class="mon">Sep</span></div>
-                <div><h3>Back-to-School Night</h3><p>Meet your child's teacher and learn what's ahead this year, 6:00–7:30 PM.</p></div>
+                <div class="event-date"><span class="day">4</span><span class="mon" data-ar="سبتمبر">Sep</span></div>
+                <div><h3 data-ar="أمسية العودة إلى المدرسة">Back-to-School Night</h3><p data-ar="تعرّف على معلّم طفلك وتعرّف على ما ينتظركم هذا العام، من 6:00 إلى 7:30 مساءً.">Meet your child's teacher and learn what's ahead this year, 6:00–7:30 PM.</p></div>
             </div>
             <div class="event-card">
-                <div class="event-date"><span class="day">18</span><span class="mon">Sep</span></div>
-                <div><h3>PTA General Meeting</h3><p>Open to all families, 6:30 PM in the cafeteria.</p></div>
+                <div class="event-date"><span class="day">18</span><span class="mon" data-ar="سبتمبر">Sep</span></div>
+                <div><h3 data-ar="اجتماع رابطة أولياء الأمور العام">PTA General Meeting</h3><p data-ar="مفتوح لجميع العائلات، الساعة 6:30 مساءً في الكافتيريا.">Open to all families, 6:30 PM in the cafeteria.</p></div>
             </div>
             <div class="event-card">
-                <div class="event-date"><span class="day">2</span><span class="mon">Oct</span></div>
-                <div><h3>Fall Festival</h3><p>Games, food trucks, and the annual staff-vs-students tug-of-war, 4:00–7:00 PM.</p></div>
+                <div class="event-date"><span class="day">2</span><span class="mon" data-ar="أكتوبر">Oct</span></div>
+                <div><h3 data-ar="مهرجان الخريف">Fall Festival</h3><p data-ar="ألعاب، وشاحنات طعام، وشد الحبل السنوي بين الطاقم والطلاب، من 4:00 إلى 7:00 مساءً.">Games, food trucks, and the annual staff-vs-students tug-of-war, 4:00–7:00 PM.</p></div>
             </div>
             <div class="event-card">
-                <div class="event-date"><span class="day">21</span><span class="mon">Oct</span></div>
-                <div><h3>Picture Day</h3><p>Individual and class photos for all students.</p></div>
+                <div class="event-date"><span class="day">21</span><span class="mon" data-ar="أكتوبر">Oct</span></div>
+                <div><h3 data-ar="يوم التصوير">Picture Day</h3><p data-ar="صور فردية وجماعية لجميع الطلاب.">Individual and class photos for all students.</p></div>
             </div>
             <div class="event-card">
-                <div class="event-date"><span class="day">12</span><span class="mon">Nov</span></div>
-                <div><h3>Parent-Teacher Conferences</h3><p>Sign-up sheets go home two weeks in advance. Half-day dismissal.</p></div>
+                <div class="event-date"><span class="day">12</span><span class="mon" data-ar="نوفمبر">Nov</span></div>
+                <div><h3 data-ar="اجتماعات أولياء الأمور والمعلمين">Parent-Teacher Conferences</h3><p data-ar="تُرسل استمارات التسجيل قبل أسبوعين. انصراف نصف يوم.">Sign-up sheets go home two weeks in advance. Half-day dismissal.</p></div>
             </div>
             <div class="event-card">
-                <div class="event-date"><span class="day">15</span><span class="mon">Dec</span></div>
-                <div><h3>Winter Showcase</h3><p>Every grade performs a short piece for families in the gym, 6:00 PM.</p></div>
+                <div class="event-date"><span class="day">15</span><span class="mon" data-ar="ديسمبر">Dec</span></div>
+                <div><h3 data-ar="معرض الشتاء">Winter Showcase</h3><p data-ar="يقدّم كل صف عرضًا قصيرًا للعائلات في الصالة الرياضية، الساعة 6:00 مساءً.">Every grade performs a short piece for families in the gym, 6:00 PM.</p></div>
             </div>
             <div class="event-card">
-                <div class="event-date"><span class="day">6</span><span class="mon">Mar</span></div>
-                <div><h3>Science Fair</h3><p>Student projects on display in the new library wing, all families welcome.</p></div>
+                <div class="event-date"><span class="day">6</span><span class="mon" data-ar="مارس">Mar</span></div>
+                <div><h3 data-ar="معرض العلوم">Science Fair</h3><p data-ar="عرض مشاريع الطلاب في جناح المكتبة الجديد، جميع العائلات مدعوة.">Student projects on display in the new library wing, all families welcome.</p></div>
             </div>
             <div class="event-card">
-                <div class="event-date"><span class="day">14</span><span class="mon">May</span></div>
-                <div><h3>Spring Arts Showcase</h3><p>Art, music, and drama students share a year of work, 5:30 PM.</p></div>
+                <div class="event-date"><span class="day">14</span><span class="mon" data-ar="مايو">May</span></div>
+                <div><h3 data-ar="معرض الفنون الربيعي">Spring Arts Showcase</h3><p data-ar="يشارك طلاب الفن والموسيقى والمسرح عامًا من العمل، الساعة 5:30 مساءً.">Art, music, and drama students share a year of work, 5:30 PM.</p></div>
             </div>
             <div class="event-card">
-                <div class="event-date"><span class="day">11</span><span class="mon">Jun</span></div>
-                <div><h3>5th Grade Moving-Up Ceremony</h3><p>A celebration for our graduating 5th graders as they head to middle school.</p></div>
+                <div class="event-date"><span class="day">11</span><span class="mon" data-ar="يونيو">Jun</span></div>
+                <div><h3 data-ar="حفل تخرّج الصف الخامس">5th Grade Moving-Up Ceremony</h3><p data-ar="احتفال بطلاب الصف الخامس المتخرجين وهم يتجهون إلى المرحلة المتوسطة.">A celebration for our graduating 5th graders as they head to middle school.</p></div>
             </div>
         </div>
     </div>
@@ -93,19 +94,19 @@
 <section class="section section-alt">
     <div class="container">
         <div class="section-head">
-            <span class="eyebrow">Plan ahead</span>
-            <h2 class="section-title">Key Dates &amp; School Breaks</h2>
+            <span class="eyebrow" data-ar="خطط مسبقًا">Plan ahead</span>
+            <h2 class="section-title" data-ar="تواريخ مهمة وعطلات مدرسية">Key Dates &amp; School Breaks</h2>
         </div>
         <div class="table-wrap" style="max-width:760px;margin:0 auto;">
             <table>
-                <thead><tr><th>Dates</th><th>Break / Closure</th></tr></thead>
+                <thead><tr><th data-ar="التواريخ">Dates</th><th data-ar="العطلة / الإغلاق">Break / Closure</th></tr></thead>
                 <tbody>
-                    <tr><td>Oct 12 – 16, 2026</td><td>Fall Break</td></tr>
-                    <tr><td>Nov 25 – 27, 2026</td><td>Thanksgiving Break</td></tr>
-                    <tr><td>Dec 21, 2026 – Jan 2, 2027</td><td>Winter Break</td></tr>
-                    <tr><td>Feb 15, 2027</td><td>Teacher Professional Development Day (No School)</td></tr>
-                    <tr><td>Mar 22 – 26, 2027</td><td>Spring Break</td></tr>
-                    <tr><td>June 11, 2027</td><td>Last Day of School (early dismissal)</td></tr>
+                    <tr><td data-ar="12 – 16 أكتوبر 2026">Oct 12 – 16, 2026</td><td data-ar="عطلة الخريف">Fall Break</td></tr>
+                    <tr><td data-ar="25 – 27 نوفمبر 2026">Nov 25 – 27, 2026</td><td data-ar="عطلة عيد الشكر">Thanksgiving Break</td></tr>
+                    <tr><td data-ar="21 ديسمبر 2026 – 2 يناير 2027">Dec 21, 2026 – Jan 2, 2027</td><td data-ar="عطلة الشتاء">Winter Break</td></tr>
+                    <tr><td data-ar="15 فبراير 2027">Feb 15, 2027</td><td data-ar="يوم تطوير مهني للمعلمين (لا دوام)">Teacher Professional Development Day (No School)</td></tr>
+                    <tr><td data-ar="22 – 26 مارس 2027">Mar 22 – 26, 2027</td><td data-ar="عطلة الربيع">Spring Break</td></tr>
+                    <tr><td data-ar="11 يونيو 2027">June 11, 2027</td><td data-ar="آخر يوم دراسي (انصراف مبكر)">Last Day of School (early dismissal)</td></tr>
                 </tbody>
             </table>
         </div>
@@ -114,10 +115,10 @@
 
 <section class="section">
     <div class="container text-center">
-        <span class="eyebrow">Stay in the loop</span>
-        <h2 class="section-title">Never Miss an Update</h2>
-        <p class="section-sub" style="margin-bottom:1.4rem;">Weekly reminders go out through our school newsletter and text alert system.</p>
-        <a href="contact.html" class="btn btn-blue">Sign Up for Alerts</a>
+        <span class="eyebrow" data-ar="ابقَ على اطّلاع">Stay in the loop</span>
+        <h2 class="section-title" data-ar="لا تفوّت أي تحديث">Never Miss an Update</h2>
+        <p class="section-sub" style="margin-bottom:1.4rem;" data-ar="تُرسل تذكيرات أسبوعية عبر نشرة المدرسة ونظام التنبيهات النصية.">Weekly reminders go out through our school newsletter and text alert system.</p>
+        <a href="contact.html" class="btn btn-blue" data-ar="اشترك للحصول على التنبيهات">Sign Up for Alerts</a>
     </div>
 </section>
 </main>
@@ -126,36 +127,36 @@
     <div class="container footer-grid">
         <div class="footer-col footer-about">
             <a href="index.html" class="logo"><svg class="brand-icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M4,28 C8,24 3,20 10,17 C17,14 9,10 16,6 C19,3 22,5 27,2" fill="none" stroke="#8b5a2b" stroke-width="2.6" stroke-linecap="round"/><ellipse cx="11" cy="15.5" rx="3.4" ry="1.7" fill="#2fbf71" transform="rotate(-35 11 15.5)"/><ellipse cx="20.5" cy="6.5" rx="3.2" ry="1.6" fill="#2fbf71" transform="rotate(15 20.5 6.5)"/><ellipse cx="6" cy="24" rx="2.8" ry="1.4" fill="#2fbf71" transform="rotate(-55 6 24)"/></svg> Learn it twisted</a>
-            <p>Growing curious minds, kind hearts, and bright futures — together, one school year at a time.</p>
+            <p data-ar="ننمّي عقولًا فضولية، وقلوبًا طيبة، ومستقبلًا مشرقًا — معًا، عامًا دراسيًا تلو الآخر.">Growing curious minds, kind hearts, and bright futures — together, one school year at a time.</p>
         </div>
         <div class="footer-col">
-            <h4>Explore</h4>
+            <h4 data-ar="استكشف">Explore</h4>
             <ul>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="academics.html">Academics</a></li>
-                <li><a href="admissions.html">Admissions</a></li>
-                <li><a href="events.html">Events Calendar</a></li>
+                <li><a href="about.html" data-ar="نبذة عنا">About Us</a></li>
+                <li><a href="academics.html" data-ar="المناهج">Academics</a></li>
+                <li><a href="admissions.html" data-ar="القبول">Admissions</a></li>
+                <li><a href="events.html" data-ar="تقويم الفعاليات">Events Calendar</a></li>
             </ul>
         </div>
         <div class="footer-col">
-            <h4>Community</h4>
+            <h4 data-ar="المجتمع">Community</h4>
             <ul>
-                <li><a href="news.html">School News</a></li>
-                <li><a href="success.html">Success Stories</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="news.html" data-ar="أخبار المدرسة">School News</a></li>
+                <li><a href="success.html" data-ar="قصص النجاح">Success Stories</a></li>
+                <li><a href="contact.html" data-ar="تواصل معنا">Contact Us</a></li>
             </ul>
         </div>
         <div class="footer-col">
-            <h4>Visit Us</h4>
+            <h4 data-ar="تواصل">Visit Us</h4>
             <address>
                 <a href="tel:+9647819767081">+964 781 9767 081</a><br>
                 <a href="mailto:simonkazage007@gmail.com">simonkazage007@gmail.com</a><br>
-                <a href="https://simon-dagenhart.github.io/DagenWeb/" target="_blank" rel="noopener noreferrer">Built by DagenWeb &#8599;</a>
+                <a href="https://simon-dagenhart.github.io/DagenWeb/" target="_blank" rel="noopener noreferrer" data-ar="بُني بواسطة DagenWeb &#8599;">Built by DagenWeb &#8599;</a>
             </address>
         </div>
     </div>
     <div class="container footer-bottom">
-        <p>&copy; <span id="year"></span> Learn it twisted. All rights reserved. (Demo site — school, names, and data are fictional.)</p>
+        <p>&copy; <span id="year"></span> Learn it twisted. <span data-ar="جميع الحقوق محفوظة. (موقع تجريبي — اسم المدرسة والبيانات وهمية.)">All rights reserved. (Demo site — school, names, and data are fictional.)</span></p>
     </div>
 </footer>
 <script src="assets/js/main.js"></script>
