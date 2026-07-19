@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us — Maple Grove Elementary School</title>
+<meta name="description" content="Get in touch with Maple Grove Elementary School — office hours, staff directory, and tour requests.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍁</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="site-header">
+    <div class="container header-inner">
+        <a href="index.html" class="logo">🍁 <span class="logo-m">Maple</span> <span class="logo-g">Grove</span> <span class="logo-e">Elementary</span></a>
+        <nav class="main-nav">
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+            <ul id="navList">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="academics.html">Academics</a></li>
+                <li><a href="admissions.html">Admissions</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="success.html">Success Stories</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+<section class="page-hero">
+    <div class="container">
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you — whether it's a quick question or a request to tour the school.</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="grid grid-2">
+            <div>
+                <h2>Send a Message</h2>
+                <p class="form-note" style="margin-bottom:1.2rem;">This form opens your email app addressed to the front office — nothing is sent from this page directly.</p>
+                <form id="contactForm" class="form-grid">
+                    <div>
+                        <label for="cf-name">Your name</label>
+                        <input type="text" id="cf-name" name="name" required>
+                    </div>
+                    <div>
+                        <label for="cf-email">Email address</label>
+                        <input type="email" id="cf-email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="cf-grade">Grade of interest</label>
+                        <select id="cf-grade" name="grade">
+                            <option value="Kindergarten">Kindergarten</option>
+                            <option value="Grade 1">Grade 1</option>
+                            <option value="Grade 2">Grade 2</option>
+                            <option value="Grade 3">Grade 3</option>
+                            <option value="Grade 4">Grade 4</option>
+                            <option value="Grade 5">Grade 5</option>
+                            <option value="Not sure yet">Not sure yet</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="cf-message">Message</label>
+                        <textarea id="cf-message" name="message" rows="5" required></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn-blue">Send Message</button>
+                        <p id="formStatus" class="form-status"></p>
+                    </div>
+                </form>
+            </div>
+            <div>
+                <h2>Visit or Call</h2>
+                <div class="card" style="margin-bottom:1.2rem;">
+                    <h3>🏫 Main Office</h3>
+                    <address>
+                        123 Learning Lane<br>
+                        Springfield, ST 00000<br>
+                        Phone: <a href="tel:+9647819767081">+964 781 9767 081</a><br>
+                        Email: <a href="mailto:simonkazage007@gmail.com">simonkazage007@gmail.com</a><br>
+                        <a href="https://simon-dagenhart.github.io/DagenWeb/" target="_blank" rel="noopener noreferrer">Built by DagenWeb &#8599;</a>
+                    </address>
+                </div>
+                <div class="card" style="margin-bottom:1.2rem;">
+                    <h3>🕐 Office Hours</h3>
+                    <p style="margin-bottom:0;">Monday–Friday, 7:30 AM – 4:00 PM<br>Closed on school holidays and breaks.</p>
+                </div>
+                <div class="card">
+                    <h3>👋 Department Contacts</h3>
+                    <div class="table-wrap">
+                        <table>
+                            <tbody>
+                                <tr><td>Admissions &amp; Enrollment</td><td><a href="mailto:admissions@maplegroveelementary.example">admissions@maplegroveelementary.example</a></td></tr>
+                                <tr><td>Attendance Office</td><td><a href="mailto:attendance@maplegroveelementary.example">attendance@maplegroveelementary.example</a></td></tr>
+                                <tr><td>School Counselor</td><td><a href="mailto:counselor@maplegroveelementary.example">counselor@maplegroveelementary.example</a></td></tr>
+                                <tr><td>PTA</td><td><a href="mailto:pta@maplegroveelementary.example">pta@maplegroveelementary.example</a></td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section-alt">
+    <div class="container">
+        <div class="section-head">
+            <span class="eyebrow">Getting here</span>
+            <h2 class="section-title">Find Us</h2>
+        </div>
+        <div class="map-box">
+            🗺️ 123 Learning Lane, Springfield, ST 00000<br>
+            <a href="https://www.google.com/maps/search/?api=1&query=123+Learning+Lane+Springfield" target="_blank" rel="noopener" class="btn btn-outline btn-sm" style="margin-top:1rem;">Get Directions</a>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container text-center">
+        <div class="cta-banner">
+            <h2>Want to see Maple Grove in person?</h2>
+            <p>Campus tours run every Tuesday and Thursday morning during the school year — no appointment needed, but a heads-up helps us plan.</p>
+            <a href="mailto:admissions@maplegroveelementary.example?subject=Tour%20Request" class="btn btn-yellow">Request a Tour</a>
+        </div>
+    </div>
+</section>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <div class="footer-col footer-about">
+            <a href="index.html" class="logo">🍁 Maple Grove Elementary</a>
+            <p>Growing curious minds, kind hearts, and bright futures — together, one school year at a time.</p>
+        </div>
+        <div class="footer-col">
+            <h4>Explore</h4>
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="academics.html">Academics</a></li>
+                <li><a href="admissions.html">Admissions</a></li>
+                <li><a href="events.html">Events Calendar</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Community</h4>
+            <ul>
+                <li><a href="news.html">School News</a></li>
+                <li><a href="success.html">Success Stories</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Visit Us</h4>
+            <address>
+                123 Learning Lane<br>
+                Springfield, ST 00000<br>
+                <a href="tel:+9647819767081">+964 781 9767 081</a><br>
+                <a href="mailto:simonkazage007@gmail.com">simonkazage007@gmail.com</a><br>
+                <a href="https://simon-dagenhart.github.io/DagenWeb/" target="_blank" rel="noopener noreferrer">Built by DagenWeb &#8599;</a>
+            </address>
+        </div>
+    </div>
+    <div class="container footer-bottom">
+        <p>&copy; <span id="year"></span> Maple Grove Elementary School. All rights reserved. (Demo site — school, names, and data are fictional.)</p>
+    </div>
+</footer>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
